@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SUPTECH ENVIRONNEMENT</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+#header{
+    background-color: #8abd91;
+   padding: 10px;
+    
+}
+#header2 {
+    position: relative;
+      background-color: white;
+      width: 100%;
+      z-index: 2000;
+    }
+#header.row {
+height: 100%; /* make the row take the full height of the header */
+}
+#btn {
+    background-color: #0a87b1;
+   color:white;
+   border-radius: 5px;
+   margin-left: 17%;
+   width: 250px;
+}
+#btn1{
+    margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 15px;
+    padding-top: 15px;
+   height: 100%;
+   border-radius: 0;
+   background-color: #0a87b1;
+   color:white;
+}
+#btn2{
+    margin-top: 0;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    height: 100%;
+    border-radius: 0;
+    background-color: #0a87b1;
+    color:white;
+}
+#btn3{
+    margin-top: 0;
+   margin-right: 0;
+    height: 100%;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-radius: 0;
+    background-color: #0a87b1;
+    color:white;
+}
+.dropdown ul {
+      display: none;
+      z-index: 1100;
+    }
+    #dropdown-menu {
+      position: relative;
+      z-index: 2500;
+    }
+    #header2 .navbar {
+      margin: auto;
+      color :white;
+      position: center;
+      text-align: center;
+     font-weight: bold;
+     font-size: 15px;
+     color:  #8abd91;;
+    }
+    #header2 .navbar ul li {
+  display: inline-block;
+  position: relative;
+}
+#header2 .navbar ul,
+    #header .navbar ul ul {
+      list-style: none;
+      padding: 0;
+      margin: 0; 
+    }
+    #header2 .navbar ul li,
+    #header2 .navbar ul ul li {
+      display: inline-block;
+      position: relative;
+      vertical-align: middle;
+  margin-right: 0;
+    }
+    #header2 .navbar ul li a,
+    #header2 .navbar ul ul li a {
+      display: block;
+      padding: 15px;
+      text-decoration: none;
+    }
+    #header2 .navbar ul ul {
+      display: none;
+      position: absolute;
+      top: 95%;
+      left: 0;
+      background-color: white;
+      border: 1px solid white;
+      z-index: 2500;
+      width: 305px;
+      box-shadow: 0px  0px 30px rgba(127, 137, 161, 0.25);
+      margin-top: 5px;
+      text-align: left;
+      font-weight: lighter;
+    }
+    #header2 .navbar ul ul li {
+      display: block;
+    }
+    #header2 .navbar ul li:hover > ul {
+      display: block; 
+    }
+    .navbar {
+      color :#8abd91;
+    }
+    #dropdown-menu {
+      position: relative;
+    }
+    #header2 .navbar ul ul ul {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      background-color: white;
+      border: 1px solid white;
+      z-index: 2500;
+      width: 350px;
+      box-shadow: 0px  0px 30px rgba(127, 137, 161, 0.25);
+      margin-left: 0;
+    }
+    #spanf, #spanc, #lang {
+      color: #8abd91;
+    }
+    #campus, #cnt, #di {
+      color: #8abd91;
+      text-decoration: none;
+    }
+    #header2 a:hover {
+      background-color: #0a87b1;
+    }
+    #label{
+        font-weight:200;
+        color: #0a87b1;
+    }
+    #label1 {
+        font-weight:200;
+    }
+    fieldset {
+        border: 2px solid #0a87b1; 
+        border-radius: 15px;
+  margin: 0;
+  padding: 10px;
+  background-color: #E5E4E2;
+  box-shadow:  0px  0px 30px rgba(127, 137, 161, 0.25);;
+}
+
+legend {
+  margin-bottom: 0;
+  font-size: 1.5em;
+  line-height: 0;
+  color: inherit;
+  text-decoration: none;
+  display: inline;
+  width: auto;
+  border-style: solid; 
+  border-width: 1px; 
+  margin-left: 5%;
+}
+
+main {
+padding: 10%;
+}
+.container {
+
+margin: 0 auto;
+margin-top: 3%;
+margin-bottom: 3%;
+}
+#section{
+    border:#0a87b1;
+    top: 80%;
+}
+
+  
+  </style>
+  </head>
+  <body>
+    <header id="header" class="container-fluid">
+        <div class="row">
+            <div class="col-xs-2 text-left">
+            <div id="logo1">
+                <a href="Home.html">
+                  <img class="img-fluid" src="pictures/FRDSI logo[1](1).png" width="120px" height=auto>
+                </a>
+            </div>
+            </div>
+                <div class="col-md-10 text-right">
+                    <button  id="btn1" type="button" class="btn">Contactez-nous</button>
+                    <button  id="btn2" type="button" class="btn">Suptech Santé</button>
+                    <button  id="btn3" type="button" class="btn">Suptech Environnement</button>
+                </div> 
+        </div>
+    </header>
+    <header id="header2">
+    <nav id="navbar" class="col-xs-12 navbar navbar-expand-xs " style="margin:auto; height: auto;" >
+        <div class="col-xs-1 text-right ">
+            <div id="logo2">
+                <a  id="logo2" href="Home.html">
+                  <img class="img-fluid" src="pictures/Picture1.png" width="120px" height=auto>
+                </a>
+            </div>
+        </div>
+<ul>
+    
+<li>
+          <a href="Home.html">
+            <span id="spanc" >Accueil</span>
+          </a>
+        </li>
+        <li class="dropdown">
+          <a href="#" id="dropdown-toggle">
+            <span id="spanf">Formations</span>
+            <span id="spanf" class="caret"></span>
+          </a>
+          <ul id="dropdown-menu">
+            <li class="dropdown">
+              <a href="CCPI.html">
+                <span>Cycle Classes préparatoires intégrées</span>
+                <span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span>
+              </a>
+              <ul >
+                <li>
+                  <a href="#">1ère année</a>
+                </li>
+                <li>
+                  <a href="#">2ème année</a>
+                </li>
+              </ul>
+            </li> 
+            <li class="dropdown">
+              <a href="CycleLicence.html">
+                <span>Cycle Licence</span>
+                <span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span>
+              </a>
+              <ul>
+                <li>
+                  <a href="#">
+                    <div class="text-warp">
+                      Licence en Génie de l'Assainissement et des Systèmes de Traitement des Eaux
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="text-warp">
+                      Licence en Qualité, Hygiène, Sécurité et Environnement
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="text-warp">
+                      Licence en Technologies des énergies renouvelables
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="text-warp">
+                      Licence en Gestion Intégrée du Littoral et Valorisation Halieutique
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="text-warp">
+                      Licence en Métiers Subaquatiques et Plongée Sous-Marine
+                      <span class="glyphicon glyphicon-chevron-left pull-right" aria-hidden="true"></span>
+                    </div>
+                  </a>
+                  <ul style="margin-left: -190%; top: 100%;">
+                    <li>
+                      <a href="#">
+                         Option 1 : Plongeur inspecteur
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                         Option 2 : Travaux publics, ouvrages
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="CycleMaster.html">
+                <span>Cycle Master</span>
+                <span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span>
+              </a>
+              <ul>
+                <li>
+                  <a href="#">
+                    <div class="text-warp">
+                      Master en Génie de l'Eau, de l'Assainissement et des Aménagements Hydroagricoles
+                    </div>
+                  </a>
+                </li>
+              </ul>
+                <li class="dropdown">
+                  <a href="CycleIngénieur.html">
+                    <span>Cycle Ingénieur</span>
+                    <span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <div class="text-warp">
+                          Génie de l'Eau et de l'Environnement
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="text-warp">
+                          Génie Digitale des Systèmes Energétiques
+                        </div>
+                      </a>
+                    </li>
+          </ul>
+        </ul>
+        </li>
+
+        <li>
+          <a id="campus" href="Campus.html">
+            <span id="spanc">Nos campuses</span>
+          </a>
+        </li>
+        <li class="dropdown">
+          <a href="#" id="dropdown-toggle">
+            <span id="spanf">Pré-inscription</span>
+            <span id="spanf" class="caret"></span>
+          </a>
+          <ul id="dropdown-menu">
+            <a href="pré-inscription.html" style="width:100%">
+              <span>Effectuer une pré-inscription</span>
+            </a>
+            <a href="#" >
+              <span>Suivre ma pré-inscription</span>
+            </a>
+          </ul>
+          <li class="dropdown">
+            <a href="#" id="dropdown-toggle">
+              <span id="spanf">Bourse</span>
+              <span id="spanf" class="caret"></span>
+            </a>
+            <ul id="dropdown-menu">
+              <a href="#" style="width:100%">
+                <span>Demande de bourse</span>
+              </a>
+              <a href="#" >
+                <span>Compléter le dossier de bourse</span>
+              </a>
+            </ul>
+            <li class="dropdown">
+              <a href="#" id="dropdown-toggle">
+                <span id="spanf">Concours</span>
+                <span id="spanf" class="caret"></span>
+              </a>
+              <ul id="dropdown-menu">
+                <a href="#">
+                  <span>Planning</span>
+                </a>
+                <a href="#" style="width:100%">
+                  <span>Résultats</span>
+                </a>
+              </ul>
+              <li>
+                <a id="di" href="#">
+                  <span id="spanc">Document d'inscription</span>
+                </a>
+              </li>
+              <li class="dropdown">
+                <a href="#" id="lang">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
+                    <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z"/>
+                    <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31"/>
+                  </svg>
+                  <span id="lang" class="caret"></span>
+                </a>
+                <ul id="dropdown-menu-lang">
+                  <li><a href="#" onclick="changeLanguage('en')">Anglais</a></li>
+                  <li><a href="#" onclick="changeLanguage('fr')">Français</a></li>
+                  <li><a href="#" onclick="changeLanguage('ar')">Arabe</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main >
+        
+        <section id="inscrif">
+          <article class="index-form">
+            
+                <form>
+                    <fieldset class="col-xs-12" style="z-index: 1001;">
+                        <legend style=" border: 2px solid black; 
+                        border-radius: 25px; 
+                        padding: 25px;
+                        border-style: solid; 
+                        border-width: 1px; 
+                        color: white;
+                        background-color: #0a87b1; "><strong>Pré-inscription</strong></legend>
+                        
+                    <div class="row">
+                    <div class="container" >
+                        <div class="col-sm-4">
+                    <div class="form-group">
+                        <label id="label" for="Nom">Nom :</label>
+                        <input class="form-control" type="text" name="Nom" placeholder="Nom">
+                        
+                    </div>
+                    <div class="form-group">
+                        <label id="label" for="Code MASSAR/CIN">Code MASSAR / CIN :</label>
+                        <input class="form-control" type="text" name="Code MASSAR/CIN" placeholder="Code MASSAR/CIN">
+                    </div>
+                    <div class="form-group">
+                        <label id="label" for="Sexe">Sexe :</label><br>
+                        <input type="radio" id="F" name="Femme" value="Femme" />
+                                <label id="label1" for="F">Femme</label>&nbsp;&nbsp;
+                        <input type="radio" id="H" name="Homme" value="Homme" />
+                                <label id="label1" for="H">Home</label>
+                    </div>
+                    <div class="form-group">
+                        <label id="label" for="Date de naissance">Date de naissance :</label>
+                        <input class="form-control" type="date" name="Date de naissance" >
+                    </div>
+                    <div class="form-group">
+                        <label id="label" for="ville">Ville de formation :</label><br>
+
+                            <select  class="form-control" name="ville" id="ville">
+                            <option   value="Mohammedia">Mohammedia</option>
+                            <option  value="Essaouira">Essaouira</option>
+                            </select>
+                    </div>
+                </div>
+           
+
+           
+                <div class="col-sm-4">
+            <div class="form-group">
+                <label id="label" for="Prénom">Prénom :</label>
+                <input class="form-control" type="text" name="Prénom" placeholder="Prénom">
+                
+            </div>
+            <div class="form-group">
+                <label id="label" for="Email">Email :</label>
+                <input class="form-control" type="email" name="Email" placeholder="Code MASSAR/CIN">
+            </div>
+            <div class="form-group">
+                <label id="label" for="Nationalité">Nationalité :</label>
+                <input class="form-control" type="text" name="Nationalité" placeholder="Nationalité">
+            </div>
+            
+            <div class="form-group">
+                <label id="label" for="CIN">CIN :</label>
+                <input class="form-control" type="text" name="CIN" placeholder="CIN" >
+            </div>
+            <div class="form-group">
+                <label id="label" for="bourse">Voulez-vous postuler au bourse ?</label><br>
+                <input type="radio" id="oui" name="Oui" value="Oui" />
+                        <label id="label1" for="oui">Oui</label>&nbsp;&nbsp;
+                <input type="radio" id="non" name="Non" value="Non" />
+                        <label id="label1" for="non">Non</label>
+            </div>
+        
+        </div>
+
+        <div class="col-sm-4">
+            <div class="form-group">
+                <label id="label" for="diplome">Dernier Diplôme obtenu / En cours :</label>
+                <input class="form-control" type="text" name="diplome" placeholder="Dernier Diplôme obtenu / En cours  ">
+                
+            </div>
+            <div class="form-group">
+                <label id="label" for="phone">Téléphone :</label>
+                <input class="form-control" type="text" name="phone" placeholder="+212600000000">
+            </div>
+            <div class="form-group">
+                <label id="label" for="Adresse">Adresse :</label>
+                <input class="form-control" type="text" name="Adresse" placeholder="Adresse">
+            </div>
+            
+            <div class="form-group">
+                <label id="label" for="Filière">Filière :</label>
+                <input class="form-control" type="text" name="Filière"  placeholder="Filière">
+            </div>
+            <div class="form-group">
+                <button  id="btn" type="button" class="btn btn-lg">S'inscrire</button>
+            </div>
+        
+        </div>
+
+    </div>
+</div>
+</fieldset>
+        </form>
+           </article>
+
+        </section>
+    </main>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+    <script>
+      
+      window.addEventListener('scroll', function() {
+  const firstHeader = document.getElementById('header');
+  const secondHeader = document.getElementById('header2');
+  if (window.pageYOffset > firstHeader.offsetHeight) {
+    secondHeader.style.position = 'fixed';
+    secondHeader.style.top = '0';
+  } else {
+    secondHeader.style.position = 'relative';
+  }
+});
+  
+     
+      document.getElementById("btn1").addEventListener("click", function() {
+          window.location.href = "Contact.html";
+      });
+      document.getElementById("btn2").addEventListener("click", function() {
+          window.location.href = "https://www.suptech-sante.ma/fr";
+      });
+      document.getElementById("btn3").addEventListener("click", function() {
+          window.location.href = "Home.html";
+      });
+
+
+      
+      </script>
+  </body>
+</html>

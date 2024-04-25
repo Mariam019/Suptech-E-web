@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SUPTECH ENVIRONNEMENT</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+#header{
+    background-color: #8abd91;
+   padding: 10px;
+    
+}
+#header2 {
+    position: relative;
+      background-color: white;
+      width: 100%;
+      z-index: 2000;
+    }
+#header.row {
+height: 100%; /* make the row take the full height of the header */
+}
+
+#btn1{
+    margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 15px;
+    padding-top: 15px;
+   height: 100%;
+   border-radius: 0;
+   background-color: #0a87b1;
+   color:white;
+}
+#btn2{
+    margin-top: 0;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    height: 100%;
+    border-radius: 0;
+    background-color: #0a87b1;
+    color:white;
+}
+#btn3{
+    margin-top: 0;
+   margin-right: 0;
+    height: 100%;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-radius: 0;
+    background-color: #0a87b1;
+    color:white;
+}
+.dropdown ul {
+      display: none;
+      z-index: 1100;
+    }
+    #dropdown-menu {
+      position: relative;
+      z-index: 2500;
+    }
+    #header2 .navbar {
+      margin: auto;
+      color :white;
+      position: center;
+      text-align: center;
+     font-weight: bold;
+     font-size: 15px;
+     color:  #8abd91;;
+    }
+    #header2 .navbar ul li {
+  display: inline-block;
+  position: relative;
+}
+#header2 .navbar ul,
+    #header .navbar ul ul {
+      list-style: none;
+      padding: 0;
+      margin: 0; 
+    }
+    #header2 .navbar ul li,
+    #header2 .navbar ul ul li {
+      display: inline-block;
+      position: relative;
+      vertical-align: middle;
+  margin-right: 0;
+    }
+    #header2 .navbar ul li a,
+    #header2 .navbar ul ul li a {
+      display: block;
+      padding: 15px;
+      text-decoration: none;
+    }
+    #header2 .navbar ul ul {
+      display: none;
+      position: absolute;
+      top: 95%;
+      left: 0;
+      background-color: white;
+      border: 1px solid white;
+      z-index: 2500;
+      width: 305px;
+      box-shadow: 0px  0px 30px rgba(127, 137, 161, 0.25);
+      margin-top: 5px;
+      text-align: left;
+      font-weight: lighter;
+    }
+    #header2 .navbar ul ul li {
+      display: block;
+    }
+    #header2 .navbar ul li:hover > ul {
+      display: block; 
+    }
+    .navbar {
+      color :#8abd91;
+    }
+    #dropdown-menu {
+      position: relative;
+    }
+    #header2 .navbar ul ul ul {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      background-color: white;
+      border: 1px solid white;
+      z-index: 2500;
+      width: 350px;
+      box-shadow: 0px  0px 30px rgba(127, 137, 161, 0.25);
+      margin-left: 0;
+    }
+    #spanf, #spanc, #lang {
+      color: #8abd91;
+    }
+    #campus, #cnt, #di {
+      color: #8abd91;
+      text-decoration: none;
+    }
+    #header2 a:hover {
+      background-color: #0a87b1;
+    }
+   #sec{
+    margin-top: 4%;
+        background-color: #efefef !important;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+    .cards{
+        display:flex;
+        flex-direction: row;
+        gap:30px;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+    .card{
+        z-index:2;
+        width: 250px;
+        height: 350px;
+        border-radius: 15px;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        
+    }
+    .card h1{
+        text-align: center;
+    }
+    .hoverarea{
+        position: relative;
+        width: 300px;
+        height: 400px;
+    }
+    .card-formations{
+        position: relative ;
+        z-index: 2;
+        transition: 600ms;
+        cursor: pointer;
+    }
+    .img-forma{
+        height: 200px;
+        width: 200px;
+        object-fit: contain;
+        border-radius: 50%;
+    }
+    .img-tree--left{
+        z-index: 0;
+        position: absolute;
+        top: -100Px;
+        left: 0px;
+        width: 200px;
+        height:500px;
+        object-fit: contain;
+        transition: 600ms;
+    }
+    .img-tree--right{
+        z-index: 0;
+        position: absolute;
+        top: -100Px;
+        left: 0px;
+        width: 250px;
+        height:500px;
+        object-fit: contain;
+        transition: 600ms;
+    }
+    .hoverarea:hover .img-tree--left{
+        transform: scale(1.2) translateX(-70px) rotate(-20deg);
+    }
+    .hoverarea:hover .img-tree--right{
+        transform: scale(1.2) translateX(70px) rotate(20deg);
+    }
+    .card-formations:hover {
+        transform: scale(1.02);
+        box-shadow: 0 0 200px rgb(29, 187, 66);
+    }
+</style>
+  </head>
+  <body>
+    <header id="header" class="container-fluid">
+        <div class="row">
+            <div class="col-xs-2 text-left">
+            <div id="logo1">
+                <a href="Home.html">
+                  <img class="img-fluid" src="pictures/FRDSI logo[1](1).png" width="120px" height=auto>
+                </a>
+            </div>
+            </div>
+                <div class="col-md-10 text-right">
+                    <button  id="btn1" type="button" class="btn">Contactez-nous</button>
+                    <button  id="btn2" type="button" class="btn">Suptech Santé</button>
+                    <button  id="btn3" type="button" class="btn">Suptech Environnement</button>
+                </div> 
+        </div>
+    </header>
+    <header id="header2">
+    <nav id="navbar" class="col-xs-12 navbar navbar-expand-xs " style="margin:auto; height: auto;" >
+        <div class="col-xs-1 text-right ">
+            <div id="logo2">
+                <a  id="logo2" href="Home.html">
+                  <img class="img-fluid" src="pictures/Picture1.png" width="120px" height=auto>
+                </a>
+            </div>
+        </div>
+<ul>
+    
+<li>
+          <a href="Home.html">
+            <span id="spanc" >Accueil</span>
+          </a>
+        </li>
+        <li class="dropdown">
+          <a href="Formations.html" id="dropdown-toggle">
+            <span id="spanf">Formations</span>
+            <span id="spanf" class="caret"></span>
+          </a>
+          <ul id="dropdown-menu">
+            <li class="dropdown">
+              <a href="CCPI.html">
+                <span>Cycle Classes préparatoires intégrées</span>
+                <span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span>
+              </a>
+              <ul >
+                <li>
+                  <a href="#">1ère année</a>
+                </li>
+                <li>
+                  <a href="#">2ème année</a>
+                </li>
+              </ul>
+            </li> 
+            <li class="dropdown">
+              <a href="CycleLicence.html">
+                <span>Cycle Licence</span>
+                <span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span>
+              </a>
+              <ul>
+                <li>
+                  <a href="#">
+                    <div class="text-warp">
+                      Licence en Génie de l'Assainissement et des Systèmes de Traitement des Eaux
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="text-warp">
+                      Licence en Qualité, Hygiène, Sécurité et Environnement
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="text-warp">
+                      Licence en Technologies des énergies renouvelables
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="text-warp">
+                      Licence en Gestion Intégrée du Littoral et Valorisation Halieutique
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="text-warp">
+                      Licence en Métiers Subaquatiques et Plongée Sous-Marine
+                      <span class="glyphicon glyphicon-chevron-left pull-right" aria-hidden="true"></span>
+                    </div>
+                  </a>
+                  <ul style="margin-left: -190%; top: 100%;">
+                    <li>
+                      <a href="#">
+                         Option 1 : Plongeur inspecteur
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                         Option 2 : Travaux publics, ouvrages
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="CycleMaster.html">
+                <span>Cycle Master</span>
+                <span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span>
+              </a>
+              <ul>
+                <li>
+                  <a href="#">
+                    <div class="text-warp">
+                      Master en Génie de l'Eau, de l'Assainissement et des Aménagements Hydroagricoles
+                    </div>
+                  </a>
+                </li>
+              </ul>
+                <li class="dropdown">
+                  <a href="CycleIngénieur.html">
+                    <span>Cycle Ingénieur</span>
+                    <span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <div class="text-warp">
+                          Génie de l'Eau et de l'Environnement
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="text-warp">
+                          Génie Digitale des Systèmes Energétiques
+                        </div>
+                      </a>
+                    </li>
+          </ul>
+        </ul>
+        </li>
+
+        <li>
+          <a id="campus" href="Campus.html">
+            <span id="spanc">Nos campuses</span>
+          </a>
+        </li>
+        <li class="dropdown">
+          <a href="#" id="dropdown-toggle">
+            <span id="spanf">Pré-inscription</span>
+            <span id="spanf" class="caret"></span>
+          </a>
+          <ul id="dropdown-menu">
+            <a href="pré-inscription.html" style="width:100%">
+              <span>Effectuer une pré-inscription</span>
+            </a>
+            <a href="#" >
+              <span>Suivre ma pré-inscription</span>
+            </a>
+          </ul>
+          <li class="dropdown">
+            <a href="#" id="dropdown-toggle">
+              <span id="spanf">Bourse</span>
+              <span id="spanf" class="caret"></span>
+            </a>
+            <ul id="dropdown-menu">
+              <a href="#" style="width:100%">
+                <span>Demande de bourse</span>
+              </a>
+              <a href="#" >
+                <span>Compléter le dossier de bourse</span>
+              </a>
+            </ul>
+            <li class="dropdown">
+              <a href="#" id="dropdown-toggle">
+                <span id="spanf">Concours</span>
+                <span id="spanf" class="caret"></span>
+              </a>
+              <ul id="dropdown-menu">
+                <a href="#">
+                  <span>Planning</span>
+                </a>
+                <a href="#" style="width:100%">
+                  <span>Résultats</span>
+                </a>
+              </ul>
+              <li>
+                <a id="di" href="#">
+                  <span id="spanc">Document d'inscription</span>
+                </a>
+              </li>
+              <li class="dropdown">
+                <a href="#" id="lang">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
+                    <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z"/>
+                    <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31"/>
+                  </svg>
+                  <span id="lang" class="caret"></span>
+                </a>
+                <ul id="dropdown-menu-lang">
+                  <li><a href="#" onclick="changeLanguage('en')">Anglais</a></li>
+                  <li><a href="#" onclick="changeLanguage('fr')">Français</a></li>
+                  <li><a href="#" onclick="changeLanguage('ar')">Arabe</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="sec" id="sec" style="margin-top: 4%;">
+        <div class="row">
+            <div class="col-sm-3" style="margin-left: 2%; margin-top: 5%;">
+                <img class="img-fluid float-left" src="pictures/education logo.png" style="height: 45px; width:45px; margin-right: 10px;">
+                <p style="color: #8abd91; display: inline-block;"><strong>Cycle Classes Préparatoires</strong></p>
+            </div>
+        </div>
+        <div class="cards">
+            <a href="#">
+            <div class="hoverarea">
+                <img src="C:\Users\Mariam\Desktop\Suptech Environnement web\pictures\tree-png-transparent-17.png" class="img-tree--left" alt="">
+                <img src="C:\Users\Mariam\Desktop\Suptech Environnement web\pictures\tree-png-transparent-17.png" class="img-tree--right" alt="">
+                <div class="card card-formations">
+                    <h1>1ère année</h1>
+                    <img src=" C:\Users\Mariam\Desktop\Suptech Environnement web\pictures\1.jpeg" class="img-forma">
+                </div>
+                
+            </div>
+            </a>
+        </div>
+    </section>
+    
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<script>
+
+window.addEventListener('scroll', function() {
+  const firstHeader = document.getElementById('header');
+  const secondHeader = document.getElementById('header2');
+  if (window.pageYOffset > firstHeader.offsetHeight) {
+    secondHeader.style.position = 'fixed';
+    secondHeader.style.top = '0';
+  } else {
+    secondHeader.style.position = 'relative';
+  }
+});
+
+
+
+  document.getElementById("btn1").addEventListener("click", function() {
+          window.location.href = "Contact.html";
+      });
+      document.getElementById("btn2").addEventListener("click", function() {
+          window.location.href = "https://www.suptech-sante.ma/fr";
+      });
+      document.getElementById("btn3").addEventListener("click", function() {
+          window.location.href = "Home.html";
+      });
+
+</script>
+
+
+
+  </body>
+</html>
