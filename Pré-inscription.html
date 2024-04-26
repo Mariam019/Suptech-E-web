@@ -1,156 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" >
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SUPTECH ENVIRONNEMENT</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-#header{
-    background-color: #8abd91;
-   padding: 10px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-}
-#header2 {
-    position: relative;
-      background-color: white;
-      width: 100%;
-      z-index: 2000;
-    }
-#header.row {
-height: 100%; /* make the row take the full height of the header */
-}
-#btn {
-    background-color: #0a87b1;
-   color:white;
-   border-radius: 5px;
-   margin-left: 17%;
-   width: 250px;
-}
-#btn1{
-    margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 15px;
-    padding-top: 15px;
-   height: 100%;
-   border-radius: 0;
-   background-color: #0a87b1;
-   color:white;
-}
-#btn2{
-    margin-top: 0;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    height: 100%;
-    border-radius: 0;
-    background-color: #0a87b1;
-    color:white;
-}
-#btn3{
-    margin-top: 0;
-   margin-right: 0;
-    height: 100%;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    border-radius: 0;
-    background-color: #0a87b1;
-    color:white;
-}
-.dropdown ul {
-      display: none;
-      z-index: 1100;
-    }
-    #dropdown-menu {
-      position: relative;
-      z-index: 2500;
-    }
-    #header2 .navbar {
-      margin: auto;
-      color :white;
-      position: center;
-      text-align: center;
-     font-weight: bold;
-     font-size: 15px;
-     color:  #8abd91;;
-    }
-    #header2 .navbar ul li {
-  display: inline-block;
+    <title>Suptech Environnement</title>
+
+<style>
+    /* Style tab links */
+.tablink {
+  background-color: #8abd91;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 15px;
+  font-size: 1.4em;
   position: relative;
+  width: 25%;
+  height: 60px;
+  text-decoration: none;
 }
-#header2 .navbar ul,
-    #header .navbar ul ul {
-      list-style: none;
-      padding: 0;
-      margin: 0; 
-    }
-    #header2 .navbar ul li,
-    #header2 .navbar ul ul li {
-      display: inline-block;
-      position: relative;
-      vertical-align: middle;
-  margin-right: 0;
-    }
-    #header2 .navbar ul li a,
-    #header2 .navbar ul ul li a {
-      display: block;
-      padding: 15px;
-      text-decoration: none;
-    }
-    #header2 .navbar ul ul {
-      display: none;
-      position: absolute;
-      top: 95%;
-      left: 0;
-      background-color: white;
-      border: 1px solid white;
-      z-index: 2500;
-      width: 305px;
-      box-shadow: 0px  0px 30px rgba(127, 137, 161, 0.25);
-      margin-top: 5px;
-      text-align: left;
-      font-weight: lighter;
-    }
-    #header2 .navbar ul ul li {
-      display: block;
-    }
-    #header2 .navbar ul li:hover > ul {
-      display: block; 
-    }
-    .navbar {
-      color :#8abd91;
-    }
-    #dropdown-menu {
-      position: relative;
-    }
-    #header2 .navbar ul ul ul {
-      display: none;
-      position: absolute;
-      top: 50%;
-      left: 100%;
-      background-color: white;
-      border: 1px solid white;
-      z-index: 2500;
-      width: 350px;
-      box-shadow: 0px  0px 30px rgba(127, 137, 161, 0.25);
-      margin-left: 0;
-    }
-    #spanf, #spanc, #lang {
-      color: #8abd91;
-    }
-    #campus, #cnt, #di {
-      color: #8abd91;
-      text-decoration: none;
-    }
-    #header2 a:hover {
-      background-color: #0a87b1;
-    }
+img{
+  border: none;
+}
+ .tablink:hover {
+  background-color:  #8abd91;
+  text-decoration: none;
+  color: #eee;
+}
+.on{
+  background-color:  #0a87b1;
+  text-decoration: none;
+  color: #eee;
+}
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+
+
+
+.navbar {
+  
+  background-color: white; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color:  #8abd91;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color:  #8abd91;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  border-bottom: 4px solid  #8abd91;
+  text-decoration: none;
+  
+}
+
+.subnav-content {
+  display: none;
+  padding-bottom: 78px;
+  position: absolute;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 99;
+}
+
+.subnav-content a {
+  float: left;
+  color: #8abd91;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color:  #8abd91;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
     #label{
         font-weight:200;
         color: #0a87b1;
+        font-size: medium;
     }
     #label1 {
         font-weight:200;
+        font-size: medium;
     }
     fieldset {
         border: 2px solid #0a87b1; 
@@ -162,6 +128,7 @@ height: 100%; /* make the row take the full height of the header */
 }
 
 legend {
+  margin-top: -2.8%;
   margin-bottom: 0;
   font-size: 1.5em;
   line-height: 0;
@@ -173,9 +140,16 @@ legend {
   border-width: 1px; 
   margin-left: 5%;
 }
+#btn {
+    background-color: #0a87b1;
+   color:white;
+   border-radius: 5px;
+   margin-left: 17%;
+   width: 250px;
+}
 
 main {
-padding: 10%;
+padding: 6%;
 }
 .container {
 
@@ -185,228 +159,78 @@ margin-bottom: 3%;
 }
 #section{
     border:#0a87b1;
-    top: 80%;
+   
 }
 
   
-  </style>
-  </head>
-  <body>
-    <header id="header" class="container-fluid">
-        <div class="row">
-            <div class="col-xs-2 text-left">
-            <div id="logo1">
-                <a href="Home.html">
-                  <img class="img-fluid" src="pictures/FRDSI logo[1](1).png" width="120px" height=auto>
-                </a>
-            </div>
-            </div>
-                <div class="col-md-10 text-right">
-                    <button  id="btn1" type="button" class="btn">Contactez-nous</button>
-                    <button  id="btn2" type="button" class="btn">Suptech Santé</button>
-                    <button  id="btn3" type="button" class="btn">Suptech Environnement</button>
-                </div> 
-        </div>
-    </header>
-    <header id="header2">
-    <nav id="navbar" class="col-xs-12 navbar navbar-expand-xs " style="margin:auto; height: auto;" >
-        <div class="col-xs-1 text-right ">
-            <div id="logo2">
-                <a  id="logo2" href="Home.html">
-                  <img class="img-fluid" src="pictures/Picture1.png" width="120px" height=auto>
-                </a>
-            </div>
-        </div>
-<ul>
-    
-<li>
-          <a href="Home.html">
-            <span id="spanc" >Accueil</span>
-          </a>
-        </li>
-        <li class="dropdown">
-          <a href="#" id="dropdown-toggle">
-            <span id="spanf">Formations</span>
-            <span id="spanf" class="caret"></span>
-          </a>
-          <ul id="dropdown-menu">
-            <li class="dropdown">
-              <a href="CCPI.html">
-                <span>Cycle Classes préparatoires intégrées</span>
-                <span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span>
-              </a>
-              <ul >
-                <li>
-                  <a href="#">1ère année</a>
-                </li>
-                <li>
-                  <a href="#">2ème année</a>
-                </li>
-              </ul>
-            </li> 
-            <li class="dropdown">
-              <a href="CycleLicence.html">
-                <span>Cycle Licence</span>
-                <span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span>
-              </a>
-              <ul>
-                <li>
-                  <a href="#">
-                    <div class="text-warp">
-                      Licence en Génie de l'Assainissement et des Systèmes de Traitement des Eaux
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="text-warp">
-                      Licence en Qualité, Hygiène, Sécurité et Environnement
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="text-warp">
-                      Licence en Technologies des énergies renouvelables
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="text-warp">
-                      Licence en Gestion Intégrée du Littoral et Valorisation Halieutique
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div class="text-warp">
-                      Licence en Métiers Subaquatiques et Plongée Sous-Marine
-                      <span class="glyphicon glyphicon-chevron-left pull-right" aria-hidden="true"></span>
-                    </div>
-                  </a>
-                  <ul style="margin-left: -190%; top: 100%;">
-                    <li>
-                      <a href="#">
-                         Option 1 : Plongeur inspecteur
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                         Option 2 : Travaux publics, ouvrages
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="CycleMaster.html">
-                <span>Cycle Master</span>
-                <span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span>
-              </a>
-              <ul>
-                <li>
-                  <a href="#">
-                    <div class="text-warp">
-                      Master en Génie de l'Eau, de l'Assainissement et des Aménagements Hydroagricoles
-                    </div>
-                  </a>
-                </li>
-              </ul>
-                <li class="dropdown">
-                  <a href="CycleIngénieur.html">
-                    <span>Cycle Ingénieur</span>
-                    <span class="glyphicon glyphicon-chevron-right pull-right" aria-hidden="true"></span>
-                  </a>
-                  <ul>
-                    <li>
-                      <a href="#">
-                        <div class="text-warp">
-                          Génie de l'Eau et de l'Environnement
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <div class="text-warp">
-                          Génie Digitale des Systèmes Energétiques
-                        </div>
-                      </a>
-                    </li>
-          </ul>
-        </ul>
-        </li>
+</style>
+</head>
+<body style="background-color: #efefef;">
+<div id="firstheader">
+<a class="tablink text-center"  href="#" ><img src="pictures/FRDSI logo[1](1).png" title="FRDSI" class="img-fluid" style="max-height: 3em;" alt="FRDSI"/> </a>
+<a class="tablink text-center on" href="Home.html"  >Suptech Environnement</a>
+<a class="tablink text-center" href="SuptechSante.html" >Suptech Santé</a>
+<a class="tablink text-center" href="Contact.html">Contat Us</a>
+</div>
+<!--_menu_-->
 
-        <li>
-          <a id="campus" href="Campus.html">
-            <span id="spanc">Nos campuses</span>
-          </a>
-        </li>
-        <li class="dropdown">
-          <a href="#" id="dropdown-toggle">
-            <span id="spanf">Pré-inscription</span>
-            <span id="spanf" class="caret"></span>
-          </a>
-          <ul id="dropdown-menu">
-            <a href="pré-inscription.html" style="width:100%">
-              <span>Effectuer une pré-inscription</span>
-            </a>
-            <a href="#" >
-              <span>Suivre ma pré-inscription</span>
-            </a>
-          </ul>
-          <li class="dropdown">
-            <a href="#" id="dropdown-toggle">
-              <span id="spanf">Bourse</span>
-              <span id="spanf" class="caret"></span>
-            </a>
-            <ul id="dropdown-menu">
-              <a href="#" style="width:100%">
-                <span>Demande de bourse</span>
-              </a>
-              <a href="#" >
-                <span>Compléter le dossier de bourse</span>
-              </a>
-            </ul>
-            <li class="dropdown">
-              <a href="#" id="dropdown-toggle">
-                <span id="spanf">Concours</span>
-                <span id="spanf" class="caret"></span>
-              </a>
-              <ul id="dropdown-menu">
-                <a href="#">
-                  <span>Planning</span>
-                </a>
-                <a href="#" style="width:100%">
-                  <span>Résultats</span>
-                </a>
-              </ul>
-              <li>
-                <a id="di" href="#">
-                  <span id="spanc">Document d'inscription</span>
-                </a>
-              </li>
-              <li class="dropdown">
-                <a href="#" id="lang">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
-                    <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z"/>
-                    <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31"/>
-                  </svg>
-                  <span id="lang" class="caret"></span>
-                </a>
-                <ul id="dropdown-menu-lang">
-                  <li><a href="#" onclick="changeLanguage('en')">Anglais</a></li>
-                  <li><a href="#" onclick="changeLanguage('fr')">Français</a></li>
-                  <li><a href="#" onclick="changeLanguage('ar')">Arabe</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </header>
+<header>
+<div class="navbar" id="navbar">
+  <a><img src="pictures/Picture1.png" class="img-fluid logo" style="max-width: 5em;" alt="" /></a>
+  <a href="Home.html">Home</a>
+  <a href="Campuses.html">Campuses</a>
+  <div class="subnav">
+    <button class="subnavbtn"><a href="Formations.html">Formations <i class="fa fa-caret-down"></i></a></button>
+    <div class="subnav-content">
+                                <a href="#comoncore">Cycle Classes Préparatoires Intégrées </a>
+                                <a href="#licence">Cycle Licence </a>
+                                <a href="#master">Cycle Master</a>
+                                <a href="#engineering">Cycle Ingenieur</a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Concours <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+                                <a href="#comoncore">Planning </a>
+                                <a href="#licence">Resultats </a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Bourses <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+                                <a href="#comoncore">Demander une bourse</a>
+                                <a href="#licence">Suivre ma demande </a>
+    </div>
     
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Documents <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+                                <a href="#rib">RIB </a>
+                                <a href="#actecaut">Acte de cautionnement</a>
+                                <a href="#internat">Reglement internat</a>
+                                <a href="#regllicmas">Reglement Cycle liicence et master</a>
+                                <a href="#reglprping">reglement interieur classes preparatoires et cycle d’ingenieur</a>
+    </div>
+    
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Pré-inscription<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+                                <a href="Pré-inscription.html">Effectuer une Pré-inscription</a>
+                                <a href="#suivinscription">Suivre mon Pré-inscription </a>
+    </div>
+    
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Francais <i class="fa fa-caret-down"></i></button>
+    
+    
+  </div>
+
+ 
+</div>
+</header>
     <main >
         
         <section id="inscrif">
@@ -527,27 +351,7 @@ margin-bottom: 3%;
   
     <script>
       
-      window.addEventListener('scroll', function() {
-  const firstHeader = document.getElementById('header');
-  const secondHeader = document.getElementById('header2');
-  if (window.pageYOffset > firstHeader.offsetHeight) {
-    secondHeader.style.position = 'fixed';
-    secondHeader.style.top = '0';
-  } else {
-    secondHeader.style.position = 'relative';
-  }
-});
-  
-     
-      document.getElementById("btn1").addEventListener("click", function() {
-          window.location.href = "Contact.html";
-      });
-      document.getElementById("btn2").addEventListener("click", function() {
-          window.location.href = "https://www.suptech-sante.ma/fr";
-      });
-      document.getElementById("btn3").addEventListener("click", function() {
-          window.location.href = "Home.html";
-      });
+    
 
 
       
