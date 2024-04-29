@@ -28,6 +28,9 @@
 img{
   border: none;
 }
+.header{
+  width:100%;
+}
  .tablink:hover {
   background-color:  #8abd91;
   text-decoration: none;
@@ -44,6 +47,7 @@ img{
   display: none;
   padding: 100px 20px;
   height: 100%;
+  
 }
 
 
@@ -225,6 +229,10 @@ img{
         transform: scale(1.02);
         box-shadow: 0 0 200px rgb(29, 187, 66);
     }
+    #firstheader, header, .section, .navbar, .row, .div, body {
+    width: 100vw;
+}
+
     .footer {
   position:fixed;
   bottom: 0;
@@ -235,7 +243,8 @@ img{
   color: white;
   font-size: medium;
   font-weight: 200;
-  z-index: 999; /* Ensure footer is above other content */
+  z-index: 999; 
+   display: none;
 }
 
 .footer p {
@@ -265,12 +274,16 @@ img{
     z-index: 3000;
   }
 }
-   
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 </style>
 </head>
-<body style="background-color: #efefef;">
+<body style="background-color: #efefef; ">
 <div id="firstheader">
-<a class="tablink text-center"  href="#" ><img src="pictures/FRDSI logo[1](1).png" title="FRDSI" class="img-fluid" style="max-height: 3em;" alt="FRDSI"/> </a>
+<a class="tablink text-center"  href="https://www.frdisi.ma/fr" ><img src="pictures/FRDSI logo[1](1).png" title="FRDSI" class="img-fluid" style="max-height: 3em;" alt="FRDSI"/> </a>
 <a class="tablink text-center on" href="Home.html"  >Suptech Environnement</a>
 <a class="tablink text-center" href="SuptechSante.html" >Suptech Santé</a>
 <a class="tablink text-center" href="Contact.html">Contat Us</a>
@@ -285,10 +298,10 @@ img{
   <div class="subnav">
     <button class="subnavbtn">Formations <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-                                <a href="#comoncore">Cycle Classes Préparatoires Intégrées </a>
-                                <a href="#licence">Cycle Licence </a>
-                                <a href="#master">Cycle Master</a>
-                                <a href="#engineering">Cycle Ingenieur</a>
+                                <a href="#CP">Cycle Classes Préparatoires Intégrées </a>
+                                <a href="#CL">Cycle Licence </a>
+                                <a href="#CM">Cycle Master</a>
+                                <a href="#CI">Cycle Ingenieur</a>
     </div>
   </div> 
   <div class="subnav">
@@ -301,7 +314,7 @@ img{
   <div class="subnav">
     <button class="subnavbtn">Bourses <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-                                <a href="#comoncore">Demander une bourse</a>
+                                <a href="demandeBourse1.html">Demander une bourse</a>
                                 <a href="#licence">Suivre ma demande </a>
     </div>
     
@@ -335,10 +348,10 @@ img{
 </div>
 </header>
     <section class="sec" id="sec" style="margin-top: 4%;">
-        <div class="row">
-            <div class="col-sm-3" style="margin-left: 2%; margin-top: 5%;">
+        <div class="row" >
+            <div class="col-md-3" style="margin-left: 2%; margin-top: 5%;">
                 <img class="img-fluid float-left" src="pictures/education logo.png" style="height: 45px; width:45px; margin-right: 10px;">
-                <p style="color: #8abd91; display: inline-block; font-size: medium;"><strong>Cycle Classes Préparatoires</strong></p>
+                <p id="CP" style="color: #8abd91; display: inline-block; font-size: medium;"><strong>Cycle Classes Préparatoires</strong></p>
             </div>
         </div>
 
@@ -369,11 +382,12 @@ img{
             </div>
        
         <div class="row">
-          <div class="col-sm-3" style="margin-left: 2%; margin-top: -5%;">
+          <div class="col-md-3" style="margin-left: 2%; margin-top: -5%;">
               <img class="img-fluid float-left" src="pictures/education logo.png" style="height: 45px; width:45px; margin-right: 10px;">
-              <p style="color: #8abd91; display: inline-block; font-size: medium;"><strong>Cycle Licence</strong></p>
+              <p id="CL" style="color: #8abd91; display: inline-block; font-size: medium;"><strong>Cycle Licence</strong></p>
           </div>
       </div>
+      
       <div class="cards1" id="cards1">
           <a href="#">
           <div class="hoverarea">
@@ -436,9 +450,9 @@ img{
                   </a>
       </div>
       <div class="row">
-        <div class="col-sm-3" style="margin-left: 2%; margin-top: -5%;">
+        <div class="col-md-3" style="margin-left: 2%; margin-top: -5%;">
             <img class="img-fluid float-left" src="pictures/education logo.png" style="height: 45px; width:45px; margin-right: 10px;">
-            <p style="color: #8abd91; display: inline-block; font-size: medium;"><strong>Cycle Master</strong></p>
+            <p id="CM" style="color: #8abd91; display: inline-block; font-size: medium;"><strong>Cycle Master</strong></p>
         </div>
     </div>
     <div class="cards3">
@@ -456,9 +470,9 @@ img{
     </div>
 
     <div class="row">
-      <div class="col-sm-3" style="margin-left: 2%; margin-top: -5%;">
+      <div class="col-md-3" style="margin-left: 2%; margin-top: -5%;">
           <img class="img-fluid float-left" src="pictures/education logo.png" style="height: 45px; width:45px; margin-right: 10px;">
-          <p style="color: #8abd91; display: inline-block; font-size: medium;"><strong>Cycle Ingénieur</strong></p>
+          <p id="CI" style="color: #8abd91; display: inline-block; font-size: medium;"><strong>Cycle Ingénieur</strong></p>
       </div>
   </div>
   <div class="cards4">
@@ -523,21 +537,21 @@ img{
 });*/
 
 window.addEventListener('scroll', function() {
-    var footer = document.querySelector('.footer');
-    // Height of the entire page including content and viewport
-    var pageHeight = document.documentElement.scrollHeight;
-    // Height of the viewport
-    var viewportHeight = window.innerHeight;
-    // Current vertical scroll position
-    var scrollPos = window.scrollY || window.pageYOffset || document.body.scrollTop || document.documentElement.scrollTop;
+            var footer = document.querySelector('.footer');
+            var scrollPos = window.scrollY || window.pageYOffset || document.body.scrollTop || document.documentElement.scrollTop;
+            var windowHeight = window.innerHeight;
+            var documentHeight = document.documentElement.scrollHeight;
 
-    // Show footer when scrolled to the bottom
-    if (scrollPos + viewportHeight >= pageHeight) {
-      footer.style.display = 'block';
-    } else {
-      footer.style.display = 'none';
-    }
-  });
+            // If the user has scrolled to the bottom of the page
+            if (scrollPos + windowHeight >= documentHeight) {
+                footer.style.display = 'block';
+            } else {
+                footer.style.display = 'none';
+            }
+        });
+
+
+
 
   
 
