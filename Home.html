@@ -10,6 +10,23 @@
     <title>Suptech Environnement</title>
 
 <style>
+  html{
+    scroll-behavior: smooth;
+}
+::selection{
+    color:wheat ;
+    background-color:#69b573;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: #eaf7ec ;
+}
+::-webkit-scrollbar-thumb{
+    background-color:#0a87b1;
+    border-radius: 10px;
+}
     /* Style tab links */
 .tablink {
   background-color: #8abd91;
@@ -122,7 +139,7 @@ img{
   color: white;
   font-size: medium;
   font-weight: 200;
-  z-index:99000; 
+  z-index:999; 
   display: none;
  
 }
@@ -420,6 +437,12 @@ body {
     margin-top: 4px; /* Add margin above the underline */
     right: 0;
   }
+  @media screen and (max-width: 768px) {
+#bar img {
+  max-width: 250px !important;
+  
+}
+}
 </style>
 </head>
 <body style="background-color: #efefef;">
@@ -442,7 +465,7 @@ body {
                                 <a href="#comoncore">Cycle Classes Préparatoires Intégrées </a>
                                 <a href="#licence">Cycle Licence </a>
                                 <a href="#master">Cycle Master</a>
-                                <a href="#engineering">Cycle Ingenieur</a>
+                                <a href="#engineering">Cycle Ingénieur</a>
     </div>
   </div> 
   <div class="subnav">
@@ -453,7 +476,7 @@ body {
     </div>
   </div> 
   <div class="subnav">
-    <button class="subnavbtn">Bourses <i class="fa fa-caret-down"></i></button>
+    <button class="subnavbtn">Bourse <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
                                 <a href="demandeBourse1.html">Demander une bourse</a>
                                 <a href="#licence">Suivre ma demande </a>
@@ -465,9 +488,9 @@ body {
     <div class="subnav-content">
                                 <a href="#rib">RIB </a>
                                 <a href="#actecaut">Acte de cautionnement</a>
-                                <a href="#internat">Reglement internat</a>
-                                <a href="#regllicmas">Reglement Cycle licence et master</a>
-                                <a href="#reglprping">reglement interieur classes preparatoires et cycle d’ingenieur</a>
+                                <a href="#internat">Règlement internat</a>
+                                <a href="#regllicmas">Règlement Cycle licence et master</a>
+                                <a href="#reglprping">Règlement intérieur classes préparatoires et cycle d’ingénieur</a>
     </div>
     
   </div>
@@ -480,7 +503,7 @@ body {
     
   </div>
   <div class="subnav">
-    <button class="subnavbtn">Francais <i class="fa fa-caret-down"></i></button>
+    <button class="subnavbtn">Français <i class="fa fa-caret-down"></i></button>
     
     
   </div>
@@ -546,22 +569,25 @@ body {
 </div>
 
 <!--++++++++++++++++++++++++++++++++++++++++++++ About +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-<div class="container-fluid">
-  <div id="About" class="row" style="background-color: #eaf7ec;">
-      <div class="col-md-6 img-responsive">
-          <img src="pictures/About.jpg" alt="" class="img-responsive" style="padding: 0 0 0 0;"/>
+<div class="container-fluid" style="margin-top: 2%; box-shadow:   0px  0px 30px rgba(127, 137, 161, 0.25);">
+  <div id="About" class="row" style="background-color: #eaf7ec; right: 0; margin-left: 0;">
+      <div class="col-md-6 img-responsive"> 
+          <img src="pictures/About.jpg" alt="" class="img-responsive" style="padding: 0 0 0 0; left: 0  ; width: max-content; "/>
       </div>
       <div class="col-md-6 align-items-center" >
           <h1 class="display-2" style="padding-top: 30px;">À propos de l'Ecole de Suptech Environnement :</h1>
-          <p class="display-5 text-justify" style="font-size: medium; padding-top: 20px;" >SUPTECH-ENVIRONNEMENT est une école de référence dans la formation en technologies 
+          <p class="display-5 text-justify" style="font-size: medium; padding-top: 10px;" >
+            SUPTECH-ENVIRONNEMENT est une école de référence dans la formation en technologies 
             environnementales et énergétiques, proposant des programmes d'ingénierie, de master et de technicien. 
             Issue de la Fondation de Recherche de Développement et d’Innovation en Sciences et Ingénierie, 
             présidée par Monsieur David André Azoulay sous la tutelle de Sa Majesté Mohammed VI, l'école incarne l'innovation, 
             l'excellence et l'engagement envers le développement durable. Avec une présence dans plus de 17 préfectures au Maroc, 
             elle joue un rôle central dans le soutien à l'entrepreneuriat, l'incubation des Start-Ups et le renforcement des PMEs.
              Dotée d'un large réseau de partenaires stratégiques et d'une équipe d'experts chevronnés, elle offre une formation de niveau mondial 
-             dans les domaines cruciaux des technologies de l'eau, de l'énergie et du développement durable.</p>
-   <p class="display-5 text-justify" style="font-size: medium; padding-top: 20px; " >Les programmes de formation de SUPTECH-ENVIRONNEMENT 
+             dans les domaines cruciaux des technologies de l'eau, de l'énergie et du développement durable.
+            </p>
+   <p class="display-5 text-justify" style="font-size: medium; padding-top: 10px; " >
+    Les programmes de formation de SUPTECH-ENVIRONNEMENT 
     sont développés en collaboration étroite avec l'industrie et les acteurs du secteur, visant à fournir aux étudiants 
     les compétences techniques, pratiques et managériales nécessaires pour répondre aux défis environnementaux contemporains. 
     Les diplômés sont préparés à jouer un rôle crucial dans la résolution des problèmes environnementaux, de la conception à la mise en œuvre, 
@@ -581,8 +607,8 @@ body {
   <div class="text-center">
     <h1 id="pf"> <strong>Nos points forts </strong></h1>
   </div>
-  <div class="d-flex justify-content-center">
-    <img src="pictures/about bar.png" alt="three dots bar" class="img-responsive  " style="max-width: 950px;" />
+  <div id="bar" class="d-flex justify-content-center">
+    <img id="bar" src="pictures/3-dots-bar.png" alt="three dots bar" class="img-responsive  " style="max-width: 950px;" />
   </div>
 <div class="container strengthK " style="background-color:#efefef;">
   <div class="row d-flex justify-content-center">
@@ -615,35 +641,35 @@ body {
 
   <!-- Paragraph Section -->
   <div class="row">
-      <div style="font-size: 16px; margin-top: 90px;  margin-bottom: 5%; " >
-          <p style=" font-size: 1.5em; font-weight: 200;  color: black;  margin-top: 20px ; margin-left: 20px; justify-content: center;">
+      <div style="font-size: 16px; margin-top: 90px;  margin-bottom: 3%; " >
+          <p style=" font-size: 1.5em; font-weight: 200;  color: black;  margin-top: 15px ; margin-left: 20px; justify-content: center;">
             Nos formations visent à former des étudiants compétents dans tous les aspects des technologies environnementales et 
             énergétiques pour adresser les défis contemporains et contribuer activement à résoudre les problèmes environnementaux.</p>
       </div>
   </div>
 
   <!-- Image Section -->
-  <div class="row" style="margin-bottom: 5%;">
+  <div class="row" style="margin-bottom: 8%;">
       <div class="col-md-3">
-          <img src="pictures/class.jpeg" alt="" class="img-fluid" style="border-radius: 5px; height: 200px; width: 350;">
+          <img src="pictures/class.jpeg" alt="" class="img-fluid" style="border-radius: 5px; height: 200px; width: 350px;">
           <div class="imgT">
               <h5>Cycle Classes Préparatoires Intégrées</h5>
           </div>
       </div>
       <div class="col-md-3">
-          <img src="pictures/CL.jpeg" alt="" class="img-fluid " style="border-radius: 5px; height: 200px; width: 350;">
+          <img src="pictures/CL.jpeg" alt="" class="img-fluid " style="border-radius: 5px; height: 200px; width: 350px;">
           <div class="imgT">
               <h5>Cycle Licence</h5>
           </div>
       </div>
       <div class="col-md-3">
-          <img src="pictures/ingenieur-eau-2114800963.jpg" alt="" class="img-fluid" style="border-radius: 5px; height: 200px; width: 350;">
+          <img src="pictures/ingenieur-eau-2114800963.jpg" alt="" class="img-fluid" style="border-radius: 5px; height: 200px; width: 350px;">
           <div class="imgT">
               <h5>Cycle Master</h5>
           </div>
       </div>
       <div class="col-md-3">
-          <img src="pictures/NEM_other.jpg" alt="" class="img-fluid" style="border-radius: 5px; height: 200px; width: 350;">
+          <img src="pictures/NEM_other.jpg" alt="" class="img-fluid" style="border-radius: 5px; height: 200px; width: 350px;">
           <div class="imgT">
               <h5>Cycle Ingénieur</h5>
           </div>

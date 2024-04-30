@@ -10,6 +10,23 @@
     <title>Suptech Environnement</title>
 
 <style>
+    html{
+    scroll-behavior: smooth;
+}
+::selection{
+    color:wheat ;
+    background-color:#69b573;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: #eaf7ec ;
+}
+::-webkit-scrollbar-thumb{
+    background-color:#0a87b1;
+    border-radius: 10px;
+}
     /* Style tab links */
 .tablink {
   background-color: #8abd91;
@@ -91,12 +108,13 @@ img{
 
 .subnav-content {
   display: none;
-  padding-bottom: 70px;
+  padding-bottom: 30px;
   position: absolute;
   left: 0;
   background-color: white;
   width: 100%;
-  z-index: 1000;
+  z-index: 3900;
+  
 }
 
 .subnav-content a {
@@ -114,10 +132,10 @@ img{
   display: block;
 }
    #sec{
-   top: 10%;
+   top: 16.8%;
        
         position: absolute;
-        height: 100%;
+        height: 60%;
         width: 100%;
     }
     .cards{
@@ -264,11 +282,14 @@ img{
     flex-direction: column;
     
   }
+  .sec{
+    margin-top: 14% !important;
+  }
   .row{
   margin-top: 50%;
   }
   .card {
-    width: 100%;
+    width: 90%;
   }
   .subnav-content {
     z-index: 3000;
@@ -279,6 +300,10 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+#firstheader, header, .section, .navbar, .row, .div, body, footer {
+    width: 100%; /* Change width to 100% */
+}
+
 </style>
 </head>
 <body style="background-color: #efefef; ">
@@ -301,18 +326,18 @@ body {
                                 <a href="#CP">Cycle Classes Préparatoires Intégrées </a>
                                 <a href="#CL">Cycle Licence </a>
                                 <a href="#CM">Cycle Master</a>
-                                <a href="#CI">Cycle Ingenieur</a>
+                                <a href="#CI">Cycle Ingénieur</a>
     </div>
   </div> 
   <div class="subnav">
     <button class="subnavbtn">Concours <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
                                 <a href="#comoncore">Planning </a>
-                                <a href="#licence">Resultats </a>
+                                <a href="#licence">Résultats </a>
     </div>
   </div> 
   <div class="subnav">
-    <button class="subnavbtn">Bourses <i class="fa fa-caret-down"></i></button>
+    <button class="subnavbtn">Bourse <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
                                 <a href="demandeBourse1.html">Demander une bourse</a>
                                 <a href="#licence">Suivre ma demande </a>
@@ -324,9 +349,9 @@ body {
     <div class="subnav-content">
                                 <a href="#rib">RIB </a>
                                 <a href="#actecaut">Acte de cautionnement</a>
-                                <a href="#internat">Reglement internat</a>
-                                <a href="#regllicmas">Reglement Cycle liicence et master</a>
-                                <a href="#reglprping">reglement interieur classes preparatoires et cycle d’ingenieur</a>
+                                <a href="#internat">Règlement internat</a>
+                                <a href="#regllicmas">Règlement Cycle licence et master</a>
+                                <a href="#reglprping">Règlement intérieur classes préparatoires et cycle d’ingénieur</a>
     </div>
     
   </div>
@@ -339,7 +364,7 @@ body {
     
   </div>
   <div class="subnav">
-    <button class="subnavbtn">Francais <i class="fa fa-caret-down"></i></button>
+    <button class="subnavbtn">Français <i class="fa fa-caret-down"></i></button>
     
     
   </div>
@@ -347,7 +372,7 @@ body {
   
 </div>
 </header>
-    <section class="sec" id="sec" style="margin-top: 4%;">
+    <section class="sec" id="sec" style="margin-top: 0%;">
         <div class="row" >
             <div class="col-md-3" style="margin-left: 2%; margin-top: 5%;">
                 <img class="img-fluid float-left" src="pictures/education logo.png" style="height: 45px; width:45px; margin-right: 10px;">
