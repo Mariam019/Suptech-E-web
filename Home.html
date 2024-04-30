@@ -122,7 +122,9 @@ img{
   color: white;
   font-size: medium;
   font-weight: 200;
-  z-index: 999; /* Ensure footer is above other content */
+  z-index:99000; 
+  display: none;
+ 
 }
 
 .footer p {
@@ -137,16 +139,287 @@ img{
 .footer a:hover {
   color:#0a87b1;
 }
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 @media screen and (max-width: 768px) {
   .footer {
     position:fixed; 
     bottom: 0;
   
   }
-  fieldset{
-  margin-bottom: 20%;
-}}
+  }
 
+.sign{
+	float: right;
+	line-height: 60px;
+	margin-right: 40px;
+}
+.sign a{
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+}
+.act{
+	border: 2px solid #fff;
+	border-radius: 50px;
+	padding: 6px 15px;
+}
+
+
+
+/* slider & dots styling */
+.slider{
+	position: relative;
+	width: 100%;
+	margin-top: 0px; 
+  padding-top: 0px;
+}
+.myslide{
+	height: 655px;
+	display: none;
+	overflow: hidden;
+}
+
+.prev, .next{
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	font-size: 50px;
+	padding: 15px;
+	cursor: pointer;
+	color: #fff;
+	transition: 0.1s;
+	
+}
+.prev:hover, .next:hover{
+	color: white; 
+}
+.next{
+	right: 0;
+}
+.dotsbox{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	bottom: 20px;
+	cursor: pointer;
+}
+.dot{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #fff;
+  
+	border-radius: 50%;
+	margin: 0 10px;
+	cursor: pointer;
+}
+
+
+/* javascript */
+.active, .dot:hover{
+	border-color: white;
+  background-color:#8abd91;
+  width: 13px;
+	height: 13px;
+}
+/* /javascript */
+
+/* muslide add fade */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0.8}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.8}
+  to {opacity: 1}
+}
+/* /muslide add fade */
+
+/* text styling and animating */
+.txt{
+	position: absolute;
+	color: #fff;
+	letter-spacing: 2px;
+	line-height: 35px;
+	top: 40%;
+	left: 15%;
+	-webkit-animation-name: posi;
+  	-webkit-animation-duration: 3s;
+  	animation-name: posi;
+  	animation-duration: 2s;
+	z-index: 1;
+  font-family:  Times New Roman , Times, serif;
+}
+
+@-webkit-keyframes posi {
+  from {left: 25%;}
+  to {left: 15%;}
+}
+
+
+@keyframes posi {
+  from {left: 25%;}
+  to {left: 15%;}
+}
+
+.txt h1{
+	color: white; 
+	font-size: 80px;
+	margin-bottom: 20px;
+  font-family: 'Playfair Display' , Times New Roman , Times, serif;
+  text-transform: uppercase;
+}
+.txt p{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+
+/* img animating*/
+#img{
+	transform: scale(1.5, 1.5);
+	-webkit-animation-name: zoomin;
+  -webkit-animation-duration: 40s;
+  animation-name: zoomin;
+  animation-duration: 40s;
+  opacity: 0.7;
+}
+@-webkit-keyframes zoomin {
+  from {transform: scale(1, 1);}
+  to {transform: scale(1.5, 1.5);}
+}
+
+
+@keyframes zoomin {
+  from {transform: scale(1, 1);}
+  to {transform: scale(1.5, 1.5);}
+}
+
+
+
+
+/* tablet */
+@media screen and (max-width: 800px){
+	.myslide{
+		height: 500px;
+	}
+	.txt{
+		letter-spacing: 2px;
+		line-height: 25px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-webkit-animation-name: posi2;
+		-webkit-animation-duration: 2s;
+		animation-name: posi2;
+		animation-duration: 2s;
+	}
+
+	@-webkit-keyframes posi2 {
+	  from {top: 35%;}
+	  to {top: 50%;}
+	}
+
+
+	@keyframes posi2 {
+	  from {top: 35%;}
+	  to {top: 50%;}
+	}
+
+	.txt h1{
+		font-size: 40px;
+	}
+	.txt p{
+		font-size: 13px;
+	}
+
+}
+/* phone */
+
+
+@media screen and (max-width: 520px){
+	.txt h1{
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+	.sign{
+		margin-right: 20px;
+	}
+	.sign a{
+		font-size: 12px;
+    text-decoration: none;
+	}
+}
+#punch{
+  max-height: 150px;
+  padding-left: 45%;
+  padding-right: 45%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#pf{
+  color:#0a87b1;
+  font-family: 'Playfair Display','Times New Roman', Times, serif;
+}
+
+#s-key{
+  background-color: #0a87b1;
+  border-radius: 20%;
+  min-height: 200px;
+  min-width: 200px;
+  max-width: 250px;
+  padding: 10px 10px 10px 10px ;
+  margin: 5%;
+}
+
+.strengthK h1
+{
+  font-weight: bold;
+  color:#98ffb5;
+  text-align: center;
+  font-size: 1.5em;
+}
+.strengthK p {
+  font-size: 1.5em;
+  color: white;
+  justify-content: center;
+  padding-top: 15px;
+}
+.cnt{
+  float: right;
+}
+
+.container .imgT {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  
+  padding: 5px;
+}
+.custom-underline::after {
+    content: "";
+    display: block;
+    width: 50%; /* Adjust the width of the underline */
+    height: 2px;
+    background-color: #0a87b1; /* Customize the color */
+    margin-top: 4px; /* Add margin above the underline */
+    right: 0;
+  }
 </style>
 </head>
 <body style="background-color: #efefef;">
@@ -215,24 +488,180 @@ img{
  
 </div>
 </header>
+<div class="slider" style="background-color:black; ">
+  <!-- fade css -->
+  <div class="myslide fade">
+    <div class="txt">
+      <h1 class="display-1"  >Suptech Environnement</h1>
+      <p>École Supérieure<br>de Technologie de l'Eau, de l'Énergie et de Développement Durable </p>
+    </div>
+    <img id="img" src="pictures/suptech_environnement.jpeg" style="width: 100%; height: 100%;" alt="suptech sante mohammadia campus">
+  </div>
+  
+  <div class="myslide fade">
+    <div class="txt">
+      <h1 class="display-1" >Suptech Environnement</h1>
+      <p>École Supérieure<br>de Technologie de l'Eau, de l'Énergie et de Développement Durable </p>
+    </div>
+    <img id="img"src="pictures/WhatsApp Image 2024-04-08 at 10.22.26 (6).jpeg" style="width: 100%; height: 100%;" alt="suptech Environnement mohammadia campus front door">
+  </div>
+  
+  <div class="myslide fade">
+    <div class="txt">
+      <h1 class="display-1"  >Suptech Environnement</h1>
+      <p>École Supérieure<br>de Technologie de l'Eau, de l'Énergie et de Développement Durable </p>
+    </div>
+    <img id="img" src="pictures/About.jpg" style="width: 100%; height: 100%;" alt="suptech mohammadia amphitheatre">
+  </div>
+  
+  <div class="myslide fade">
+    <div class="txt">
+      <h1 class="display-1"  >Suptech Environnement</h1>
+      <p>École Supérieure<br>de Technologie de l'Eau, de l'Énergie et de Développement Durable </p>
+    </div>
+    <img id="img" src="pictures/se1.jpeg" style="width: 100%; height: 100%;" alt="suptech mohammadia amphitheatre">
+  </div>
+  
+  <div class="myslide fade">
+    <div class="txt">
+      <h1 class="display-1"  >Suptech Environnement</h1>
+      <p>École Supérieure<br>de Technologie de l'Eau, de l'Énergie et de Développement Durable </p>
+    </div>
+    <img id="img" src="pictures/se2.jpeg" style="width: 100%; height: 100%;" alt="celebration d'ouverture de suptech">
+  </div>
+ 
+  
+  <!-- onclick js -->
+  <a class="prev" onclick="plusSlides(-1)">            </a>
+    <a class="next" onclick="plusSlides(1)">           </a>
+  
+  <div class="dotsbox" style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+  </div>
+  <!-- /onclick js -->
+</div>
 
+<!--++++++++++++++++++++++++++++++++++++++++++++ About +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<div class="container-fluid">
+  <div id="About" class="row" style="background-color: #eaf7ec;">
+      <div class="col-md-6 img-responsive">
+          <img src="pictures/About.jpg" alt="" class="img-responsive" style="padding: 0 0 0 0;"/>
+      </div>
+      <div class="col-md-6 align-items-center" >
+          <h1 class="display-2" style="padding-top: 30px;">À propos de l'Ecole de Suptech Environnement :</h1>
+          <p class="display-5 text-justify" style="font-size: medium; padding-top: 20px;" >SUPTECH-ENVIRONNEMENT est une école de référence dans la formation en technologies 
+            environnementales et énergétiques, proposant des programmes d'ingénierie, de master et de technicien. 
+            Issue de la Fondation de Recherche de Développement et d’Innovation en Sciences et Ingénierie, 
+            présidée par Monsieur David André Azoulay sous la tutelle de Sa Majesté Mohammed VI, l'école incarne l'innovation, 
+            l'excellence et l'engagement envers le développement durable. Avec une présence dans plus de 17 préfectures au Maroc, 
+            elle joue un rôle central dans le soutien à l'entrepreneuriat, l'incubation des Start-Ups et le renforcement des PMEs.
+             Dotée d'un large réseau de partenaires stratégiques et d'une équipe d'experts chevronnés, elle offre une formation de niveau mondial 
+             dans les domaines cruciaux des technologies de l'eau, de l'énergie et du développement durable.</p>
+   <p class="display-5 text-justify" style="font-size: medium; padding-top: 20px; " >Les programmes de formation de SUPTECH-ENVIRONNEMENT 
+    sont développés en collaboration étroite avec l'industrie et les acteurs du secteur, visant à fournir aux étudiants 
+    les compétences techniques, pratiques et managériales nécessaires pour répondre aux défis environnementaux contemporains. 
+    Les diplômés sont préparés à jouer un rôle crucial dans la résolution des problèmes environnementaux, de la conception à la mise en œuvre, 
+    en passant par la gestion et la maintenance des infrastructures et des systèmes. Les disciplines enseignées incluent la gestion 
+    numérique des systèmes énergétiques, le génie de l'eau et de l'environnement, le génie de l'assainissement et les systèmes intelligents 
+    de traitement des eaux. L'école s'engage à former une nouvelle génération de leaders capables de concevoir, développer et mettre en œuvre 
+    des solutions innovantes et durables pour un avenir meilleur pour la planète et ses habitants. 
+  </p>
+      </div>
+  </div>
+  </div>
+<!--+++++++++++++++++++++++++++++++++++++++nos point fort+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+<div>
+  <div class="d-flex justify-content-center">
+    <img src="pictures/str.png" alt="a shiny punch" class="img-responsive " id="punch"  />
+  </div>
+  <div class="text-center">
+    <h1 id="pf"> <strong>Nos points forts </strong></h1>
+  </div>
+  <div class="d-flex justify-content-center">
+    <img src="pictures/about bar.png" alt="three dots bar" class="img-responsive  " style="max-width: 950px;" />
+  </div>
+<div class="container strengthK " style="background-color:#efefef;">
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-4" id="s-key">
+      <h1>+100 d'experts<br>+50 de partenaires</h1>
+      <p>la recherche, le développement, l'innovation et l'entrepreneuriat</p>
+    </div>
+    <div class="col-md-4" id="s-key">
+      <h1>Formations <br>pluridisciplinaires</h1>
+      <p>visant à développer des compétences pour intervenir dans toutes les étapes du cycle de vie des dispositifs médicaux</p>
+    </div>
+    <div class="col-md-4" id="s-key">
+      <h1>Acquisition <br>des outils nécessaires</h1>
+      <p>pour innover et exceller dans les secteurs de l'industrie pharmaceutique, de l'industrie des vaccins et de l'industrie cosmétique</p>
+    </div>
+  </div>
+</div>
+</div>
+<!--*******************************************Nos Cycles******************************************************-->
+<div class="container" style="margin-bottom: 5%;">
+  <!-- Header Section -->
+  <div class="row"  style="float: right;">
+<div class="col-md-12 text-right d-flex ">
 
+  <img src="pictures/tegami.png" alt="Icon" style="max-width: 60px;">
+  <h2 class="underline-text display-2 custom-underline">Nos Cycles</h2>
+  
+</div>
+</div>
+
+  <!-- Paragraph Section -->
+  <div class="row">
+      <div style="font-size: 16px; margin-top: 90px;  margin-bottom: 5%; " >
+          <p style=" font-size: 1.5em; font-weight: 200;  color: black;  margin-top: 20px ; margin-left: 20px; justify-content: center;">
+            Nos formations visent à former des étudiants compétents dans tous les aspects des technologies environnementales et 
+            énergétiques pour adresser les défis contemporains et contribuer activement à résoudre les problèmes environnementaux.</p>
+      </div>
+  </div>
+
+  <!-- Image Section -->
+  <div class="row" style="margin-bottom: 5%;">
+      <div class="col-md-3">
+          <img src="pictures/class.jpeg" alt="" class="img-fluid" style="border-radius: 5px; height: 200px; width: 350;">
+          <div class="imgT">
+              <h5>Cycle Classes Préparatoires Intégrées</h5>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <img src="pictures/CL.jpeg" alt="" class="img-fluid " style="border-radius: 5px; height: 200px; width: 350;">
+          <div class="imgT">
+              <h5>Cycle Licence</h5>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <img src="pictures/ingenieur-eau-2114800963.jpg" alt="" class="img-fluid" style="border-radius: 5px; height: 200px; width: 350;">
+          <div class="imgT">
+              <h5>Cycle Master</h5>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <img src="pictures/NEM_other.jpg" alt="" class="img-fluid" style="border-radius: 5px; height: 200px; width: 350;">
+          <div class="imgT">
+              <h5>Cycle Ingénieur</h5>
+          </div>
+      </div>
+  </div>
+</div>
 
 
 
 <footer class="footer">
-  
     <div class="container text-center" style="margin-top: 1%;">
       <a href="#"><i class="fa fa-facebook"></i></a>
       <a href="#"><i class="fa fa-instagram"></i></a>
       <a href="#"><i class="fa fa-linkedin"></i></a>
       <a href="#"><i class="fa fa-envelope"></i></a>
       <a href="#"><i class="fa fa-whatsapp"></i></a>
-    
       <p>SUPTECH ENVIRONNEMENT ©2024 Tous les droits sont réservés.</p>
     </div>
-    
-  
   </footer>
   
 
@@ -241,10 +670,66 @@ img{
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   <script>
-    
+
+const myslide = document.querySelectorAll('.myslide'),
+dot = document.querySelectorAll('.dot');
+let counter = 1;
+slidefun(counter);
+
+let timer = setInterval(autoSlide, 1500);
+function autoSlide() {
+	counter += 1;
+	slidefun(counter);
+}
+function plusSlides(n) {
+	counter += n;
+	slidefun(counter);
+	resetTimer();
+}
+function currentSlide(n) {
+	counter = n;
+	slidefun(counter);
+	resetTimer();
+}
+function resetTimer() {
+	clearInterval(timer);
+	timer = setInterval(autoSlide,1500);
+}
+
+function slidefun(n) {
+	
+	let i;
+	for(i = 0;i<myslide.length;i++){
+		myslide[i].style.display = "none";
+	}
+	for(i = 0;i<dot.length;i++) {
+		dot[i].className = dot[i].className.replace(' active', '');
+	}
+	if(n > myslide.length){
+	   counter = 1;
+	   }
+	if(n < 1){
+	   counter = myslide.length;
+	   }
+	myslide[counter - 1].style.display = "block";
+	dot[counter - 1].className += " active";
+}
   
 
+window.addEventListener('scroll', function() {
+            console.log('Scroll event triggered');
+            var footer = document.querySelector('.footer');
+            var scrollPos = window.scrollY || window.pageYOffset || document.body.scrollTop || document.documentElement.scrollTop;
+            var windowHeight = window.innerHeight;
+            var documentHeight = document.documentElement.scrollHeight;
 
+            // If the user has scrolled to the bottom of the page
+            if (scrollPos + windowHeight >= documentHeight) {
+              footer.style.display = 'block' ;
+            } else {
+                footer.style.display = 'none';
+            }
+        });
     
     </script>
 </body>
