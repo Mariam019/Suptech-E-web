@@ -215,8 +215,15 @@ margin-top: 3%;
   
   }
   fieldset{
-  margin-bottom: 20%;
-}}
+  margin-bottom: 35%;
+}
+legend{
+margin-top: -15%;
+}
+#btn{
+  margin-left: -6%;
+}
+}
 
 </style>
 </head>
@@ -235,7 +242,7 @@ margin-top: 3%;
   <a href="Home.html">Home</a>
   <a href="Campuses.html">Campuses</a>
   <div class="subnav">
-    <button class="subnavbtn">Formations <i class="fa fa-caret-down"></i></button>
+    <button class="subnavbtn" onclick="window.location.href='Formations.html'">Formations <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
                                 <a href="#comoncore">Cycle Classes Préparatoires Intégrées </a>
                                 <a href="#licence">Cycle Licence </a>
@@ -259,7 +266,7 @@ margin-top: 3%;
     
   </div>
   <div class="subnav">
-    <button class="subnavbtn">Documents <i class="fa fa-caret-down"></i></button>
+    <button class="subnavbtn" onclick="window.location.href='Documents.html'">Documents <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
                                 <a href="#rib">RIB </a>
                                 <a href="#actecaut">Acte de cautionnement</a>
@@ -315,9 +322,9 @@ margin-top: 3%;
                     </div>
                     <div class="form-group">
                         <label id="label" for="Sexe">Sexe :</label><br>
-                        <input type="radio" id="F" name="Femme" value="Femme" />
+                        <input type="radio" id="F" name="sexe" value="Femme" />
                                 <label id="label1" for="F">Femme</label>&nbsp;&nbsp;
-                        <input type="radio" id="H" name="Homme" value="Homme" />
+                        <input type="radio" id="H" name="sexe" value="Homme" />
                                 <label id="label1" for="H">Home</label>
                     </div>
                     <div class="form-group">
@@ -357,9 +364,9 @@ margin-top: 3%;
             </div>
             <div class="form-group">
                 <label id="label" for="bourse">Voulez-vous postuler au bourse ?</label><br>
-                <input type="radio" id="oui" name="Oui" value="Oui" />
+                <input type="radio" id="oui" name="bourse" value="Oui" />
                         <label id="label1" for="oui">Oui</label>&nbsp;&nbsp;
-                <input type="radio" id="non" name="Non" value="Non" />
+                <input type="radio" id="non" name="bourse" value="Non" />
                         <label id="label1" for="non">Non</label>
             </div>
         

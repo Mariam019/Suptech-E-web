@@ -160,11 +160,29 @@ img{
     bottom: 0;
   
   }
+  .bordered-content1{
+    width: 100% !important;
+    margin-left: 0.5% !important;
+  }
+  .bordered-content{
+    margin-bottom: 20%;
+    
+  }
+  #col1{
+   
+    margin-bottom: 20%;
+  }
+  #col2{
+    margin-top: 25% ;
+  }
+ 
+ 
 }
 
 .bordered-content{
-    border: 1px solid #0a87b1; 
-  padding: 70px; 
+    border: 2px solid #0a87b1; 
+  padding: 95px; 
+  
   text-align: center ;
   margin-left: 15%;
   margin-right: 15%;
@@ -177,19 +195,18 @@ img{
  box-shadow:  0px  0px 30px rgba(127, 137, 161, 0.25);
 }
 .bordered-content1{
-    border: 0.5px solid white; 
-  padding: 10px; 
-  text-align: center ;
+    border: 1px solid white;  
+    padding-bottom: 1.5%;
+    padding-top: 6%;
   margin-left: 25%;
   margin-right: 15%;
   background-color:#8abd91;
   color:white !important;
   border-radius: 5px;
-  font-size: 1.3em;
-  margin-top:5%;
+  font-size: 1.4em;
  width: 50%;
-  height: 40%;
- bottom: 20%;
+  height: 50%;
+ 
 }
 .row a:hover {
   color:#0a87b1 !important; 
@@ -213,7 +230,7 @@ img{
   <a href="Home.html">Home</a>
   <a href="Campuses.html">Campuses</a>
   <div class="subnav">
-    <button class="subnavbtn">Formations <i class="fa fa-caret-down"></i></button>
+    <button class="subnavbtn" onclick="window.location.href='Formations.html'">Formations <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
                                 <a href="#comoncore">Cycle Classes Préparatoires Intégrées </a>
                                 <a href="#licence">Cycle Licence </a>
@@ -237,7 +254,7 @@ img{
     
   </div>
   <div class="subnav">
-    <button class="subnavbtn">Documents <i class="fa fa-caret-down"></i></button>
+    <button class="subnavbtn" onclick="window.location.href='Documents.html'">Documents <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
                                 <a href="#rib">RIB </a>
                                 <a href="#actecaut">Acte de cautionnement</a>
@@ -273,8 +290,8 @@ img{
 <div class="bordered-content">
     
     <div class="row">
-        <div class="col-md-6">
-            <p style=" font-size: 1.5em;">Session 1</p>
+        <div id="col1" class="col-md-6" >
+            <p style=" font-size: 1.5em; margin-top: -5%;">Session 1</p>
             <div class="bordered-content1">
             <a style=" color:white;  text-decoration: none; transition: color 0.3s;  " href="#">Site Mohammedia</a>
             </div>
@@ -283,8 +300,8 @@ img{
                 <a style=" color:white;  text-decoration: none; transition: color 0.3s; " href="#">Site Essaouira</a>
                 </div>
         </div>
-        <div class="col-md-6">
-            <p style=" font-size: 1.5em;">Session 2</p>
+        <div id="col2" class="col-md-6" >
+            <p style=" font-size: 1.5em; margin-top: -5%;">Session 2</p>
             <div class="bordered-content1">
                 <a style=" color:white;  text-decoration: none; transition: color 0.3s; " href="#">Site Mohammedia</a>
                 </div>
