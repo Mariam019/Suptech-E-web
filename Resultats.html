@@ -140,6 +140,7 @@ img{
   font-size: medium;
   font-weight: 200;
   z-index: 999; /* Ensure footer is above other content */
+  
 }
 
 .footer p {
@@ -154,43 +155,39 @@ img{
 .footer a:hover {
   color:#0a87b1;
 }
-@media screen and (max-width: 768px) {
-  .footer {
-    position:fixed; 
-    bottom: 0;
-  
+
+@media only screen and (max-width: 525px) {
+
+  .bordered-content{
+    margin-bottom: 40% !important;
+    height: 100%;
+    
+    text-align: center;
   }
   .bordered-content1{
     width: 100% !important;
-    margin-left: 0.5% !important;
-  }
-  .bordered-content{
-    margin-bottom: 20%;
-    
+    margin-left: -4.5% !important;
   }
   #col1{
-   
-    margin-bottom: 20%;
+    margin-bottom: 30% !important; 
+    flex-direction: column;
+    align-content: center;
   }
   #col2{
-    margin-top: 25% ;
+    margin-top:30% !important;
+    flex-direction: column;
+    align-items: center;
+   
   }
- 
- 
 }
-
 .bordered-content{
     border: 2px solid #0a87b1; 
   padding: 95px; 
-  
   text-align: center ;
-  margin-left: 15%;
-  margin-right: 15%;
   background-color:#E5E4E2;
   color:#0a87b1;
   border-radius: 25px;
   font-size: 1.5em;
-  margin-top:2%;
  height: 100%;
  box-shadow:  0px  0px 30px rgba(127, 137, 161, 0.25);
 }
@@ -211,6 +208,7 @@ img{
 .row a:hover {
   color:#0a87b1 !important; 
 }
+
 
 
 </style>
@@ -285,9 +283,9 @@ img{
 <main>
 
    
-    <p style="font-size: 2.5em; color: #0a87b1; text-align: center; 
+    <p style="font-size: 2.5em;  color: #0a87b1; text-align: center; 
     margin-top: 3%;" ><strong>Résultats du Concours d'Accès aux Classes Préparatoires de l'Ecole SUPTECH SANTE</strong></p>
-<div class="bordered-content">
+<div class="bordered-content container ">
     
     <div class="row">
         <div id="col1" class="col-md-6" >
@@ -341,6 +339,7 @@ img{
 
   <script>
     
+  
   
 
 

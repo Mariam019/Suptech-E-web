@@ -277,24 +277,32 @@ img{
 .footer a:hover {
   color:#0a87b1;
 }
-    @media (max-width: 768px) {
+
+
+    @media only screen and (max-width: 768px) {
   .cards, .cards1, .cards2, .cards3, .cards4 {
     flex-direction: column;
-    
+  }
+  
+  footer {
+    position:fixed; 
+    bottom: 0;
+  
   }
   .sec{
-    margin-top: 14% !important;
+    margin-top: 25% !important;
   }
   .row{
-  margin-top: 50%;
+  margin-top: 25%;
   }
   .card {
     width: 90%;
   }
   .subnav-content {
-    z-index: 3000;
+    z-index: 6900;
   }
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -381,7 +389,7 @@ body {
         </div>
 
         <div class="cards">
-            <a href="#">
+            <a href="1ère_année.html">
             <div class="hoverarea">
                 <img src="pictures/tree-png-transparent-17.png" class="img-tree--left" alt="">
                 <img src="pictures/tree-png-transparent-17.png" class="img-tree--right" alt="">
