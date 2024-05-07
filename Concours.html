@@ -140,9 +140,12 @@ img{
   font-size: medium;
   font-weight: 200;
   z-index: 999; /* Ensure footer is above other content */
+  display: none;
   
 }
-
+.footer.show {
+display: block; /* Show footer when scrolled to bottom */
+}
 .footer p {
   margin: 0; 
   
@@ -173,11 +176,11 @@ section{
     border: 4px solid #0a87b1; 
     background-color:#8abd91;
     border-radius: 15px;
-    padding-bottom: 4%;
+    padding-bottom: 2%;
     margin-bottom: 10%;
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 2%;
+    margin-top: 1%;
     font-size: medium;
 }
 
@@ -187,6 +190,17 @@ td{
 th{
     border:  8px solid #8abd91 !important;
     color:white !important;
+}
+th.diagonalFalling
+{
+	background: linear-gradient(to right top, #0a87b1 0%,#0a87b1 49.9%,white,white 51%,#0a87b1.1%,#0a87b1 100%);
+}
+@media only screen and (max-width: 1024px) {
+   
+th p{
+ 
+  margin-bottom: 40%; 
+}
 }
 </style>
 </head>
@@ -269,12 +283,10 @@ th{
               <table class="table table-bordered" >
                   <thead>
                       <tr>
-                          <th scope="col"  style="position: relative;  background-color: #0a87b1; ">
-                               Matières du concours 
-                          <br><br>
-                          
-                          Baccalauréat
-                          
+                          <th class="diagonalFalling" scope="col"  style="position: relative;  background-color: #0a87b1!important ;">
+                           <p style="color:white; top: 0; text-align: end; ">Matières de concours</p>
+                            
+                            Baccalauréat
                           </th>
                           <th scope="col" style="background-color: #0a87b1; ">Mathématiques</th>
                           <th scope="col" style=" background-color: #0a87b1; ">Physique-Chimie</th>
@@ -380,7 +392,17 @@ th{
 
   <script>
     
-  
+    $(document).scroll(function() {
+      console.log('event triggered')
+var scrollPos = $(document).scrollTop();
+var windowHeight = $(window).height();
+var documentHeight = $(document).height();
+if (scrollPos + windowHeight >= documentHeight) {
+    $('.footer').addClass('show');
+} else {
+    $('.footer').removeClass('show');
+}
+});
   
 
 
