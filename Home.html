@@ -160,12 +160,19 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  margin-block: auto;
+}
+main{
+  padding-bottom: 40px;
+  
 }
 @media screen and (max-width: 768px) {
   .footer {
     position:fixed; 
     bottom: 0;
-  
+  }
+  main{
+    padding: 20px;
   }
   }
 
@@ -239,7 +246,7 @@ body {
 /* javascript */
 .active, .dot:hover{
 	border-color: white;
-  background-color:#8abd91;
+  background-color:#8abd91 !important;
   width: 13px;
 	height: 13px;
 }
@@ -457,7 +464,7 @@ body {
   margin-bottom: 6%;
   width: 100%;
   max-width: 100%;
-  
+  margin-top: 5%;
 }
 .Pw h2{
     color:white;
@@ -558,7 +565,7 @@ body{
 }
 
 .active, .dot1:hover {
-  background-color: #717171;
+  background-color: #717171 ;
 }
 
 /* Fading animation */
@@ -576,6 +583,24 @@ body{
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+.sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            animation: fadeInDown 0.5s ease;
+            z-index: 999;
+        }
+
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 </style>
 </head>
 <body style="background-color: #efefef;">
@@ -645,6 +670,7 @@ body{
  
 </div>
 </header>
+<main>
 <div class="slider" style="background-color:rgb(43, 43, 43); ">
   <!-- fade css -->
   <div class="myslide fade">
@@ -787,42 +813,43 @@ body{
       <div class="col-md-3">
           <img src="pictures/class.jpeg" alt="" class="img-fluid" style="border-radius: 5px; height: 200px; width: 350px;">
           <div class="imgT">
-              <h5>Cycle Classes Préparatoires Intégrées</h5>
+              <a href="Formations.html#CP" style="text-decoration: none; color: white;"><h4>Cycle Classes Préparatoires Intégrées</h4></a>
           </div>
       </div>
       <div class="col-md-3">
           <img src="pictures/CL.jpeg" alt="" class="img-fluid " style="border-radius: 5px; height: 200px; width: 350px;">
           <div class="imgT">
-              <h5>Cycle Licence</h5>
+            <a href="Formations.html#CL" style="text-decoration: none; color: white;"><h4>Cycle Licence</h4></a>
           </div>
       </div>
       <div class="col-md-3">
           <img src="pictures/ingenieur-eau-2114800963.jpg" alt="" class="img-fluid" style="border-radius: 5px; height: 200px; width: 350px;">
           <div class="imgT">
-              <h5>Cycle Master</h5>
+            <a href="Formations.html#CM" style="text-decoration: none; color: white;"> <h4>Cycle Master</h4></a>
           </div>
       </div>
       <div class="col-md-3">
           <img src="pictures/NEM_other.jpg" alt="" class="img-fluid" style="border-radius: 5px; height: 200px; width: 350px;">
           <div class="imgT">
-              <h5>Cycle Ingénieur</h5>
+            <a href="Formations.html#CI" style="text-decoration: none; color: white;"> <h4>Cycle Ingénieur</h4></a>
           </div>
       </div>
   </div>
 </div>
 <!--*******************************************Activites parascolaires******************************************************-->
-<div style="margin-top: 1%;">
+<div class="container" style="margin-top: -3% !important;" >
 
-  <div class="row"  >
-    <div class="col-md-12  d-flex Title-s">
-
-        <img src="pictures/ParaS.png" alt="Icon" style="width: 180px !important; margin-top: -4%; margin-right: 0;">
-        <h2 class="underline-text display-2 custom-underline" >Activités parascolaires</h2>
-        
-</div>
-  </div>
+  <div class="row"  style="float: right;">
+    <div class="col-md-12 text-right d-flex ">
+    
+      <img src="pictures/ParaS.png" alt="Icon" style="max-width: 60px;">
+      <h2 class="underline-text display-2 custom-underline">activités parascolaires</h2>
+      
+    </div>
+    </div>
+ 
   
-  <div class="row">
+  <div class="row" style="margin-top: 8%;">
 <div class="slideshow-container col-md-12">
 
 <div class="mySlides fade">
@@ -856,7 +883,7 @@ body{
   <span class="dot1" onclick="currentSlide(3)"></span> 
 </div>
 </div>
-</div>
+
 
 
 
@@ -873,12 +900,22 @@ body{
         <div class="card shadow d-flex">
             <div class="card-body">
                 <img src="pictures/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-free-vector.jpg" alt="Profile Image" class=" img-fluid mb-3" style="border-radius: 50%;">
-                <p class="card-text"   >Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nisi fuga, corporis quae totam reiciendis ad explicabo quaerat itaque natus ipsum, nostrum magni exercitationem dolorum quisquam quos sed labore facilis amet voluptas consequuntur, odit sunt. Dolore ut, amet rem officiis impedit dignissimos accusamus distinctio placeat nobis sapiente quia fuga. Ratione necessitatibus eum saepe pariatur debitis veritatis adipisci sequi aperiam inventore rerum laborum, similique quisquam incidunt. Velit modi assumenda dolorem consequatur? Laboriosam repellat aperiam fugiat amet soluta voluptates facere sunt rerum asperiores blanditiis magni ab deserunt aut, doloribus nulla nemo dolore deleniti. Dolore, quaerat officiis dolorem saepe recusandae veniam commodi nulla eius beatae labore rem mollitia quia placeat magni ea cum necessitatibus odio accusamus! Harum fugiat voluptate nihil nulla, unde eum perspiciatis fuga molestias temporibus omnis non minus architecto totam excepturi sunt voluptatibus maxime deserunt! Recusandae quos fugit minus voluptatum incidunt id laboriosam qui, quia ducimus tempore rerum adipisci obcaecati beatae velit ipsa ut soluta delectus expedita quisquam, eligendi hic architecto! Ipsam corporis adipisci beatae ut debitis. Cum voluptatum dolor assumenda modi cumque veniam nostrum perspiciatis maxime, tenetur placeat reprehenderit harum quo animi alias possimus sed sint laboriosam impedit obcaecati! Ullam facilis unde dolorem! Tenetur soluta nobis praesentium ex? Nihil doloribus maiores expedita aperiam adipisci ab corrupti nisi dicta, aut libero aliquam id deleniti eveniet dolorem voluptate deserunt, laboriosam reiciendis maxime excepturi cum molestiae nulla temporibus minima. Mollitia harum ad soluta perferendis nemo expedita nulla, laboriosam incidunt, enim repudiandae reprehenderit aliquam voluptates culpa accusamus cumque praesentium. Voluptatem ducimus nostrum doloremque minus, quae ab obcaecati debitis aspernatur, modi error nam sed eum repellat eius cumque iusto, laudantium unde aliquid excepturi. Totam corporis ab ullam optio delectus magni veritatis nemo quos, minus nam, in suscipit commodi laudantium, quas dolore tempora sapiente. Ullam accusamus totam rem. Eligendi libero et vero sint odio, reprehenderit tempora.</p>
+                <p class="card-text"   >Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nisi fuga, 
+                  corporis quae totam reiciendis ad explicabo quaerat itaque natus ipsum, nostrum magni exercitationem dolorum quisquam quos sed labore
+                   facilis amet voluptas consequuntur, odit sunt. Dolore ut, amet rem officiis impedit dignissimos accusamus distinctio placeat nobis 
+                   sapiente quia fuga. Ratione necessitatibus eum saepe pariatur debitis veritatis adipisci sequi aperiam inventore rerum laborum, similique 
+                   quisquam incidunt. Velit modi assumenda dolorem consequatur? Laboriosam repellat aperiam fugiat amet soluta voluptates facere sunt rerum 
+                   asperiores blanditiis magni ab deserunt aut, doloribus nulla nemo dolore deleniti. Dolore, quaerat officiis dolorem saepe recusandae 
+                   veniam commodi nulla eius beatae labore rem mollitia quia placeat magni ea cum necessitatibus odio accusamus! Harum fugiat voluptate 
+                   nihil nulla, unde eum perspiciatis fuga molestias temporibus omnis non minus architecto totam excepturi sunt voluptatibus maxime deserunt!
+                    Recusandae quos fugit minus voluptatum incidunt id laboriosam qui,
+                   quia ducimus tempore rerum adipisci obcaecati beatae velit ipsa ut soluta delectus expedita quisquam, 
+                   eligendi hic architecto! Ipsam corporis adipisci beatae ut debitis. </p>
             </div>
         </div>
     </div>
 </div>
-
+</main>
 
 <footer class="footer">
     <div class="container text-center" style="margin-top: 1%;">
@@ -985,6 +1022,20 @@ window.addEventListener('scroll', function() {
             }
         });
     
+/* sticky header */
+        window.onscroll = function() {stickyNavbar()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function stickyNavbar() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+    } else {
+        navbar.classList.remove("sticky");
+    }
+}
+  
     </script>
 </body>
 </html>

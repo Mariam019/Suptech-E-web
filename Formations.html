@@ -322,7 +322,44 @@ body {
 #firstheader, header, .section, .navbar, .row, .div, body, footer {
     width: 100%; /* Change width to 100% */
 }
+@media only screen and (max-width: 1024px) {
+  .cards, .cards1, .cards2, .cards3, .cards4 {
+    flex-direction: column;
+  }
+  footer {
+    position:fixed; 
+    bottom: 0;
+  
+  }
+  .sec{
+    top: 15% !important;
+    margin-bottom: 20% !important;
+  }
+  
+  .row{
+  margin-top: 15%;
+  }
+  .card {
+    width: 100%;
+  }}
+  .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            animation: fadeInDown 0.5s ease;
+            z-index: 999;
+        }
 
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 </style>
 </head>
 <body style="background-color: #efefef; ">
@@ -569,8 +606,19 @@ body {
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 <script>
+/* sticky header */
+window.onscroll = function() {stickyNavbar()};
 
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
 
+function stickyNavbar() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+    } else {
+        navbar.classList.remove("sticky");
+    }
+}
 
 window.addEventListener('scroll', function() {
             var footer = document.querySelector('.footer');
