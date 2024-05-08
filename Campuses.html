@@ -140,7 +140,7 @@ img{
   font-size: medium;
   font-weight: 200;
   z-index: 999; /* Ensure footer is above other content */
-  
+  display : none;  
 }
 
 .footer p {
@@ -155,7 +155,64 @@ img{
 .footer a:hover {
   color:#0a87b1;
 }
-
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Campuses%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+li{
+  display: inline-block;
+  color: #fff;
+}
+.imgC{
+  width: 100% ;
+  max-height:190;
+  opacity: 80%;
+  z-index: -9;
+  border-radius: 5px;
+  
+}
+.caption{
+  margin-top: 5px;
+  background-color: #0a87b1;
+  padding-left: 10px;
+  border-radius: 5%;
+  color: #fff;
+  font-size: 16px;
+}
+.links a{
+  font-style: normal;
+  text-decoration: none;
+  color: white;
+}
+.links a:hover{
+  font-size: larger;
+  font-style: normal;
+  text-decoration: none;
+  color: white;
+}
+@media screen and (max-width: 624px){
+	#MOHAMMEDIA{
+    margin-bottom: 10px;
+  }
+  #ESSAOUIRA{
+    margin-bottom: 10px;
+  }
+  main{
+    margin-bottom: 10% !important;
+  }
+}
+@media only screen and (min-width: 1725px){
+	#MOHAMMEDIA{
+    width: 690px;
+  }
+  #ESSAOUIRA{
+    width: 690px;
+  }
+}
+body{
+  width: 100%;
+  overflow-x: hidden;
+}
+main{
+  margin-bottom: 8%;
+}
 </style>
 </head>
 <body style="background-color: #efefef;">
@@ -226,7 +283,103 @@ img{
 </div>
 </header>
 
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Nos Campuses %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<main>
+<div class="row d-flex" style="margin-top: 5%;">
 
+
+  <div class="container col-md-6" style="background-color: #0a87b1; max-width: 40%; border-radius: 5%;min-width: 320px; " id="MOHAMMEDIA">
+      <div >
+          <img src="pictures/MOHAMMEDIA.png" alt="campus icon" class="img-fluid " style="max-width: 180px; padding-top: 10px; padding-bottom: 10px; padding-left: 5px;"/>
+      </div>
+      <div style="position: relative;">
+          <img src="pictures/suptech_environnement.jpeg" alt="" class="img-responsive imgC" >
+          <p class="caption">Le campus de Mohammedia offre un cadre dynamique où l'apprentissage rencontre la diversité culturelle, stimulant ainsi la croissance intellectuelle et personnelle de ses étudiants.</p>
+          <div>
+              <div>
+                  <ul>
+                      <li><img src="pictures/location icon.png" alt="" class="img-responsive " style="max-height: 17px;" ></li>
+                      <li class="links"><a href="https://maps.google.com/?q=SUPTECH ENVIRONNEMENT : Zone Industrielle, MOHAMMEDIA"> SUPTECH ENVIRONNEMENT : Zone Industrielle, MOHAMMEDIA </a></li>
+                  </ul>
+              </div>
+              <div>
+                  <ul>
+                      <li><img src="pictures/phone icon.png" alt="" class="img-responsive " style="max-width: 15px;"></li>
+                      <li class="links"><a href="tel:+212661625586"> +212 661 625 586 </a></li>
+                  </ul>
+              </div>
+              <div>
+                  <ul>
+                      <li><img src="pictures/mail icon.png" alt="" class="img-responsive " style="max-width: 15px;" ></li>
+                      <li class="links"><a href="mailto:contact@suptech-environnement.ma"> contact@suptech-environnement.ma </a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+  <div class="container col-md-6" style="background-color: #0a87b1; max-width: 40%; border-radius: 5%; min-width: 320px;" id="ESSAOUIRA">
+      <div class="d-flex">
+          <img src="pictures/ESSAOUIRA.png" alt="campus icon" class="img-fluid " style="max-width: 180px; padding-top: 10px; padding-bottom: 10px; padding-left: 5px;">
+      </div>
+      <div style="position: relative;">
+          <img src="pictures/suptech_environnement.jpeg" alt="" class="img-responsive imgC" >
+          <p class="caption">Le campus d’Essaouira offre un cadre dynamique où l'apprentissage rencontre la diversité culturelle, stimulant ainsi la croissance intellectuelle et personnelle de ses étudiants.</p>
+          <div>
+              <div>
+                  <ul>
+                      <li><img src="pictures/location icon.png" alt="" class="img-responsive " style="max-height: 17px;" ></li>
+                      <li class="links"><a href="https://maps.google.com/?q=SUPTECH SANTE: Avenue Al Akwas, Essaouira"> SUPTECH ENVIRONNEMENT: Avenue Al Akwas, Essaouira </a></li>
+                  </ul>
+              </div>
+              <div>
+                  <ul>
+                      <li><img src="pictures/phone icon.png" alt="" class="img-responsive " style="max-width: 15px;"></li>
+                      <li class="links"><a href="tel:+212666405885"> +212 666 405 885 </a></li>
+                  </ul>
+              </div>
+              <div>
+                  <ul>
+                      <li><img src="pictures/mail icon.png" alt="" class="img-responsive " style="max-width: 15px;" ></li>
+                      <li class="links"><a href="mailto:contact@suptech-environnement.ma">  contact@suptech-environnement.ma </a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div>
+             
+      </div>
+  </div>
+
+
+
+      <div class="container" style="margin-top: 5%;">
+      <h2 class="display-3 text-center">Heading</h2>
+      <div class="row">
+          
+          <div class="col-lg-6 col-md-6">
+              <img src="pictures/se1.jpeg" class="img-fluid" alt="Image 1" style="height: 80%; width: 100%; border-radius: 5px; box-shadow:  0px  0px 30px rgba(127, 137, 161, 0.25);">
+          </div>
+          <div class="col-lg-6 col-md-6">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, nisi? Magni itaque at eum recusandae eaque assumenda laboriosam, repudiandae error incidunt facilis aliquid quam explicabo laudantium odio quia alias tempora non placeat, dignissimos ut magnam voluptatem. Mollitia laborum sunt eaque alias ad facilis voluptas earum recusandae, natus dignissimos? Possimus aperiam molestiae architecto. Esse dolores perferendis deleniti porro sit. Laboriosam minus eos aspernatur labore nam tempora ratione pariatur a repudiandae optio, accusantium culpa voluptatum corrupti quibusdam magnam nesciunt! Inventore pariatur ut illo reiciendis quas officiis eligendi perferendis! Consequatur animi vel, explicabo natus quas exercitationem quasi, voluptatibus soluta, dolorem corrupti enim iste.t</p>
+          </div>
+      </div>
+      <h2 class="display-3 text-center" >Another Heading</h2>
+      <div class="row">
+          <div class="col-lg-6 col-md-6">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil sapiente, quasi facilis ut nesciunt quisquam inventore aliquid reprehenderit! Provident voluptate repellat aliquid, suscipit sequi dicta eveniet, enim esse ipsum, ex dolorem quia fugiat. Eligendi voluptates impedit architecto suscipit, voluptatem officiis ab quae sint neque, aliquam esse, praesentium incidunt rerum similique!</p>
+          </div>
+          <div class="col-lg-6 col-md-6">
+          <img src="pictures/se2.jpeg" class="img-fluid" alt="Image 2" style="height: 80%; width: 100%; border-radius: 5px; box-shadow:  0px  0px 30px rgba(127, 137, 161, 0.25);">
+          </div>
+      </div>
+  </div>
+
+
+
+</div>
+</main>
 <footer class="footer">
   
     <div class="container text-center" style="margin-top: 1%;">
@@ -251,7 +404,20 @@ img{
     
   
     
+    window.addEventListener('scroll', function() {
+            console.log('Scroll event triggered');
+            var footer = document.querySelector('.footer');
+            var scrollPos = window.scrollY || window.pageYOffset || document.body.scrollTop || document.documentElement.scrollTop;
+            var windowHeight = window.innerHeight;
+            var documentHeight = document.documentElement.scrollHeight;
 
+            // If the user has scrolled to the bottom of the page
+            if (scrollPos + windowHeight >= documentHeight) {
+              footer.style.display = 'block' ;
+            } else {
+                footer.style.display = 'none';
+            }
+        });
 
 
 
